@@ -920,516 +920,293 @@ var yorenov = {
                 window.interface("Hud").info.weapon = window.interface("Hud").info.weapon;
                 window.interface("Hud").info.show = 0;
                 window.interface("Hud").hideGreenZoneTab();
-                window.sendChatInput("/hudscalefix");
                 window.openInterface('GameText');
             }, 2500, "YORENOV MODS HUD");
         }
     },
-    yorenovRadar: {
-        data: {
-            type: "\u041E\u0432\u0430\u043B\u044C\u043D\u044B\u0439",
-            color: "#F000"
-        },
-        showRadarTypeDialog: function showRadarTypeDialog() {
-            var radarOptions = ["\u041A\u0440\u0443\u0433\u043B\u044B\u0439", "\u041A\u0432\u0430\u0434\u0440\u0430\u0442\u043D\u044B\u0439", "\u041F\u0440\u044F\u043C\u043E\u0443\u0433\u043E\u043B\u044C\u043D\u044B\u0439", "\u041E\u0432\u0430\u043B\u044C\u043D\u044B\u0439", "\u0426\u0432\u0435\u0442"];
-            var optionsString = radarOptions.join("<n>");
-            yorenov.createDialog(2, "Scriptloader radar", "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u0442\u0438\u043F \u0440\u0430\u0434\u0430\u0440\u0430:", "\u0412\u044B\u0431\u0440\u0430\u0442\u044C", "\u0417\u0430\u043A\u0440\u044B\u0442\u044C", optionsString, function(selected) {
-                try {
-                    var cleanSelection = selected;
-                    if (typeof selected === "string") {
-                        cleanSelection = selected.replace(/<[^>]*>/g, "").trim();
-                    }
-                    if (radarOptions.includes(cleanSelection)) {
-                        yorenov.logError("\u0412\u044B\u0431\u0440\u0430\u043D \u0442\u0438\u043F \u0440\u0430\u0434\u0430\u0440\u0430: " + cleanSelection);
-                        if (cleanSelection === "\u0426\u0432\u0435\u0442") {
-                            setTimeout(function() {
-                                yorenov.yorenovRadar.showRadarColorDialog();
-                            }, 400);
-                        } else {
-                            yorenov.yorenovRadar.data.type = cleanSelection;
-                            yorenov.yorenovRadar.changeRadar(cleanSelection, yorenov.yorenovRadar.data.color);
-                            yorenovPickNote(cleanSelection);
-                        }
-                    } else {
-                        yorenov.logError("\u041D\u0435\u0432\u0435\u0440\u043D\u044B\u0439 \u0432\u044B\u0431\u043E\u0440");
-                    }
-                } catch (error) {
-                    yorenov.logError("\u041E\u0448\u0438\u0431\u043A\u0430 \u043F\u0440\u0438 \u0432\u044B\u0431\u043E\u0440\u0435 \u0440\u0430\u0434\u0430\u0440\u0430: " + error);
-                }
-            }, function() {
-                yorenov.logError("\u0412\u044B\u0431\u043E\u0440 \u0440\u0430\u0434\u0430\u0440\u0430 \u043E\u0442\u043C\u0435\u043D\u0435\u043D");
-            });
-        },
-        showRadarColorDialog: function showRadarColorDialog() {
-            yorenov.createDialog(1, "Scriptloader radar color", "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0446\u0432\u0435\u0442 \u0440\u0430\u0434\u0430\u0440\u0430 (\u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, #FF0000 \u0438\u043B\u0438 #F000):", "\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C", "\u0417\u0430\u043A\u0440\u044B\u0442\u044C", "", function(inputColor) {
-                try {
-                    var cleanColor = inputColor.trim();
-                    if (cleanColor) {
-                        if (cleanColor[0] !== "#") {
-                            cleanColor = "#" + cleanColor;
-                        }
-                        yorenov.logError("\u0412\u044B\u0431\u0440\u0430\u043D \u0446\u0432\u0435\u0442 \u0440\u0430\u0434\u0430\u0440\u0430: " + cleanColor);
-                        yorenov.yorenovRadar.data.color = cleanColor;
-                        yorenov.yorenovRadar.changeRadar(yorenov.yorenovRadar.data.type, cleanColor);
-                        yorenovPickNote(cleanColor);
-                    } else {
-                        yorenov.logError("\u0426\u0432\u0435\u0442 \u043D\u0435 \u0432\u0432\u0435\u0434\u0435\u043D");
-                    }
-                } catch (error) {
-                    yorenov.logError("\u041E\u0448\u0438\u0431\u043A\u0430 \u043F\u0440\u0438 \u0432\u044B\u0431\u043E\u0440\u0435 \u0446\u0432\u0435\u0442\u0430: " + error);
-                }
-            }, function() {
-                yorenov.logError("\u0412\u044B\u0431\u043E\u0440 \u0446\u0432\u0435\u0442\u0430 \u043E\u0442\u043C\u0435\u043D\u0435\u043D");
-            });
-        },
-        applyRadar: function applyRadar() {
-            var finalType = yorenov.yorenovRadar.data.type || "\u041E\u0432\u0430\u043B\u044C\u043D\u044B\u0439";
-            var finalColor = yorenov.yorenovRadar.data.color || "#F000";
-            yorenov.logError("(debug) Applying radar: type=" + finalType + ", color=" + finalColor);
-            var radarElement = document.querySelector(".hud-radmir-radar");
-            if (!radarElement) {
-                yorenov.logError("(error) Radar element not found");
-                return;
-            }
-            radarElement.classList.remove("radar-round", "radar-rectangular", "radar-square", "radar-oval");
-            var radarClass = "";
-            if (finalType === "\u041A\u0440\u0443\u0433\u043B\u044B\u0439") {
-                radarClass = "radar-round";
-            } else if (finalType === "\u041F\u0440\u044F\u043C\u043E\u0443\u0433\u043E\u043B\u044C\u043D\u044B\u0439") {
-                radarClass = "radar-rectangular";
-            } else if (finalType === "\u041A\u0432\u0430\u0434\u0440\u0430\u0442\u043D\u044B\u0439") {
-                radarClass = "radar-square";
-            } else {
-                radarClass = "radar-oval";
-            }
-            radarElement.classList.add(radarClass);
-            var styles = "\n                body #app .hud-radmir-radar__map { transition: .3s; border: none !important; }\n                .radar-round .hud-radmir-radar__map { border-radius: 100%; }\n                .radar-oval .hud-hassle-map, .radar-rectangular .hud-hassle-map, .radar-square .hud-hassle-map {\n                    width: 32vh !important;\n                    height: 32vh !important;\n                }\n                .radar-rectangular .hud-radmir-radar__radar, .radar-square .hud-radmir-radar__radar {\n                    width: 26.3vh;\n                    border-radius: 2vh;\n                }\n                .radar-rectangular .hud-radmir-radar__map {\n                    width: 26.3vh !important;\n                    height: 16.9vh !important;\n                    overflow: hidden;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    border-radius: 2vh;\n                }\n                .radar-rectangular .hud-radmir-radar {\n                    left: 7.3vh;\n                    bottom: 4.03vh;\n                }\n                .radar-square .hud-radmir-radar {\n                    left: 7.2vh;\n                }\n                .radar-square .hud-radmir-radar__map {\n                    width: 21.9vh !important;\n                    height: 20.9vh !important;\n                    overflow: hidden;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    border-radius: 2vh;\n                }\n                .radar-oval .hud-radmir-radar__radar {\n                    width: 26.3vh;\n                }\n                .radar-oval .hud-radmir-radar__map {\n                    width: 27.1vh !important;\n                    height: 18.2vh !important;\n                    overflow: hidden;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    border-radius: 100%;\n                }\n                .radar-oval .hud-radmir-radar {\n                    left: 7.3vh;\n                    bottom: 4.03vh;\n                }\n                .radar-round .hud-radmir-radar {\n                    bottom: -1.03vh!important;\n                }\n                body #app .hud-radmir-radar__map { border: 0.65vh solid ".concat(finalColor, " !important; }\n            ");
-            yorenov.createStyles(styles);
-            yorenov.logError("(info) Radar applied");
-        },
-        changeRadar: function changeRadar(selectedRadar, radarColor) {
-            yorenov.logError("(debug) Changing radar: " + selectedRadar + ", " + radarColor);
-            var finalType = selectedRadar || "\u041E\u0432\u0430\u043B\u044C\u043D\u044B\u0439";
-            var finalColor = radarColor || "#F000";
-            yorenov.yorenovRadar.data.type = finalType;
-            yorenov.yorenovRadar.data.color = finalColor;
-            yorenov.data.radarData.type = finalType;
-            yorenov.data.radarData.color = finalColor;
-            yorenov.yorenovRadar.applyRadar();
-            yorenov.changeCfg();
-            yorenov.logError("(info) Radar changed and saved");
-        },
-        init: function init() {
-            yorenov.logError("(debug) Initializing yorenovRadar...");
-            try {
-                yorenov.registerCommand("/radar", function() {
-                    yorenov.yorenovRadar.showRadarTypeDialog();
-                    return 0;
-                });
-                yorenov.registerCommand("/radarcolor", function() {
-                    yorenov.yorenovRadar.showRadarColorDialog();
-                    return 0;
-                });
-                yorenov.executeFunctionWhen(function() {
-                    yorenov.logError("(debug) Loading config...");
-                    yorenov.getCfg();
-                }, function() {
-                    return document.querySelector('.hud-radmir-radar') !== null;
-                }, "radar init");
-                yorenov.logError("(info) Radar initialized");
-            } catch (error) {
-                yorenov.logError("(error) " + error);
-            }
-        }
-    },
-    yorenovLogo: {
-        showSizeDialog: function showSizeDialog() {
-            yorenov.createDialog(1, "Scriptloader logo", "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0440\u0430\u0437\u043C\u0435\u0440 \u043B\u043E\u0433\u043E (\u0448\u0438\u0440\u0438\u043D\u0430 \u0432\u044B\u0441\u043E\u0442\u0430, \u043D\u0430\u043F\u0440. 30 5):", "\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C", "\u0417\u0430\u043A\u0440\u044B\u0442\u044C", "", function(input) {
-                try {
-                    var parts = String(input || "").trim().split(/\s+/);
-                    var w = parseFloat(parts[0]);
-                    var h = parseFloat(parts[1]);
-                    if (!(w > 0) || !(h > 0) || w > 100 || h > 100) {
-                        yorenov.logError("\u041D\u0435\u0432\u0435\u0440\u043D\u044B\u0439 \u0440\u0430\u0437\u043C\u0435\u0440 \u043B\u043E\u0433\u043E");
-                        return;
-                    }
-                    yorenov.changeLogoCfg(w, h);
-                    yorenov.waitLogoAndApply();
-                    yorenovPickNote("Logo: " + w + " x " + h + " vh");
-                } catch (error) {
-                    yorenov.logError("Logo error: " + error);
-                }
-            }, function() {
-                yorenov.logError("\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u043B\u043E\u0433\u043E \u043E\u0442\u043C\u0435\u043D\u0435\u043D\u043E");
-            });
-        },
-        init: function init() {
-            yorenov.logError("(debug) Initializing yorenovLogo...");
-            try {
-                yorenov.registerCommand("/logo", function() {
-                    yorenov.yorenovLogo.showSizeDialog();
-                    return 0;
-                });
-                yorenov.registerCommand("/logosize", function(args) {
-                    var w = parseFloat(args && args[0]);
-                    var h = parseFloat(args && args[1]);
-                    if (!(w > 0) || !(h > 0) || w > 100 || h > 100) return 0;
-                    yorenov.changeLogoCfg(w, h);
-                    yorenov.waitLogoAndApply();
-                    yorenovPickNote("Logo: " + w + " x " + h + " vh");
-                    return 0;
-                });
-                yorenov.getLogoCfg();
-                yorenov.waitLogoAndApply();
-                yorenov.logError("(info) Logo initialized");
-            } catch (error) {
-                yorenov.logError("(error) " + error);
-            }
-        }
-    },
     captureMod: {
-        data: {
-            isInitialized: false,
-            customElement: null,
-            updateInterval: null,
-            selectedType: "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E"
-        },
-        hookCapture: function hookCapture() {
-            var self = this;
-            var originalCapture = document.querySelector('.capture');
-            if (!originalCapture) {
-                console.log('(capture) Waiting for capture element...');
-                return false;
-            }
-            var existingCustom = document.getElementById('old-capture');
-            if (existingCustom && document.body.contains(existingCustom)) {
-                this.data.customElement = existingCustom;
-                this.data.isInitialized = true;
-                this.injectBaseStyles();
-                document.querySelectorAll('.capture').forEach(function(el) {
-                    if (el.id !== 'old-capture') el.style.display = 'none';
-                });
-                this.applyStyles(this.data.selectedType || "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E");
-                return true;
-            }
-            if (this.data.customElement) {
-                try {
-                    this.data.customElement.remove();
-                } catch (e) {}
-                this.data.customElement = null;
-            }
-            var leftName = this.getLeftName() || "Team 1";
-            var leftKills = this.getLeftKills() || "0";
-            var rightName = this.getRightName() || "Team 2";
-            var rightKills = this.getRightKills() || "0";
-            var timer = this.getTimer() || "00:00";
-            var myImg = '';
-            var enemyImg = '';
-            var timerImg = '';
-            if (window.yorenovNewHudAssets && window.yorenovNewHudAssets.capture) {
-                myImg = window.yorenovNewHudAssets.capture.my || '';
-                enemyImg = window.yorenovNewHudAssets.capture.enemyies || '';
-                timerImg = window.yorenovNewHudAssets.capture.timer || '';
-            }
-            var customCapture = document.createElement('div');
-            customCapture.id = 'old-capture';
-            customCapture.className = 'capture old-capture';
-            var table = document.createElement('div');
-            table.className = 'capture-table';
-            var leftCol = document.createElement('div');
-            leftCol.className = 'capture-table__col';
-            var leftKillsEl = document.createElement('div');
-            leftKillsEl.className = 'capture-table__col-kills my';
-            leftKillsEl.textContent = leftKills;
-            if (myImg) {
-                leftKillsEl.style.backgroundImage = 'url(' + myImg + ')';
-            }
-            var leftNameEl = document.createElement('div');
-            leftNameEl.className = 'name';
-            leftNameEl.textContent = leftName;
-            leftCol.appendChild(leftKillsEl);
-            leftCol.appendChild(leftNameEl);
-            var timerEl = document.createElement('div');
-            timerEl.className = 'capture-table__timer';
-            timerEl.textContent = timer;
-            if (timerImg) {
-                timerEl.style.backgroundImage = 'url(' + timerImg + ')';
-            }
-            var rightCol = document.createElement('div');
-            rightCol.className = 'capture-table__col';
-            var rightNameEl = document.createElement('div');
-            rightNameEl.className = 'name';
-            rightNameEl.textContent = rightName;
-            var rightKillsEl = document.createElement('div');
-            rightKillsEl.className = 'capture-table__col-kills';
-            rightKillsEl.textContent = rightKills;
-            if (enemyImg) {
-                rightKillsEl.style.backgroundImage = 'url(' + enemyImg + ')';
-            }
-            rightCol.appendChild(rightNameEl);
-            rightCol.appendChild(rightKillsEl);
-            table.appendChild(leftCol);
-            table.appendChild(timerEl);
-            table.appendChild(rightCol);
-            customCapture.appendChild(table);
+    data: {
+        isInitialized: false,
+        customElement: null,
+        updateInterval: null,
+        selectedType: "\u0421\u0435\u0440\u043e\u0435 \u0442\u0430\u0431\u043B\u043E" // По умолчанию Серое табло
+    },
+    hookCapture: function hookCapture() {
+        var self = this;
+        var originalCapture = document.querySelector('.capture');
+        if (!originalCapture) {
+            console.log('(capture) Waiting for capture element...');
+            return false;
+        }
+        var existingCustom = document.getElementById('old-capture');
+        if (existingCustom && document.body.contains(existingCustom)) {
+            this.data.customElement = existingCustom;
+            this.data.isInitialized = true;
             this.injectBaseStyles();
-            originalCapture.parentNode.insertBefore(customCapture, originalCapture);
             document.querySelectorAll('.capture').forEach(function(el) {
                 if (el.id !== 'old-capture') el.style.display = 'none';
             });
-            this.data.customElement = customCapture;
-            this.data.isInitialized = true;
-            this.applyStyles(this.data.selectedType || "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E");
-            this.startUpdate();
-            console.log('(capture) Capture hooked');
+            this.applyStyles(this.data.selectedType || "\u0421\u0435\u0440\u043e\u0435 \u0442\u0430\u0431\u043B\u043E");
             return true;
-        },
-        getLeftName: function getLeftName() {
+        }
+        if (this.data.customElement) {
             try {
-                var el = document.querySelector('.capture-scoreboard__left-side_name');
-                return el ? el.textContent.trim() : '';
-            } catch (e) {
-                return '';
-            }
-        },
-        getLeftKills: function getLeftKills() {
-            try {
-                var el = document.querySelector('.capture-scoreboard__left-side_score');
-                return el ? el.textContent.trim() : '0';
-            } catch (e) {
-                return '0';
-            }
-        },
-        getRightName: function getRightName() {
-            try {
-                var el = document.querySelector('.capture-scoreboard__right-side_name');
-                return el ? el.textContent.trim() : '';
-            } catch (e) {
-                return '';
-            }
-        },
-        getRightKills: function getRightKills() {
-            try {
-                var el = document.querySelector('.capture-scoreboard__right-side_score');
-                return el ? el.textContent.trim() : '0';
-            } catch (e) {
-                return '0';
-            }
-        },
-        getTimer: function getTimer() {
-            try {
-                var el = document.querySelector('.capture-scoreboard__timer-time');
-                return el ? el.textContent.trim() : '00:00';
-            } catch (e) {
-                return '00:00';
-            }
-        },
-        updateData: function updateData() {
-            if (!this.data.isInitialized || !this.data.customElement) return;
-            try {
-                var names = this.data.customElement.querySelectorAll('.name');
-                if (names.length >= 2) {
-                    names[0].textContent = this.getLeftName() || "Team 1";
-                    names[1].textContent = this.getRightName() || "Team 2";
-                }
-                var kills = this.data.customElement.querySelectorAll('.capture-table__col-kills');
-                if (kills.length >= 2) {
-                    kills[0].textContent = this.getLeftKills() || "0";
-                    kills[1].textContent = this.getRightKills() || "0";
-                }
-                var timer = this.data.customElement.querySelector('.capture-table__timer');
-                if (timer) {
-                    timer.textContent = this.getTimer() || "00:00";
-                }
+                this.data.customElement.remove();
             } catch (e) {}
-        },
-        startUpdate: function startUpdate() {
-            if (this.data.updateInterval) clearInterval(this.data.updateInterval);
-            var self = this;
-            this.data.updateInterval = setInterval(function() {
-                var custom = document.getElementById('old-capture');
-                var alive = custom && document.body.contains(custom);
-                if (!alive) {
-                    var originalCapture = document.querySelector('.capture');
-                    if (originalCapture) {
-                        self.data.isInitialized = false;
-                        self.hookCapture();
-                        if (self.data.selectedType) {
-                            setTimeout(function() {
-                                self.applyStyles(self.data.selectedType);
-                            }, 50);
-                        }
-                    }
-                    return;
-                }
-                document.querySelectorAll('.capture').forEach(function(el) {
-                    if (el.id !== 'old-capture' && el.style.display !== 'none') {
-                        el.style.display = 'none';
-                    }
-                });
-                self.updateData();
-            }, 500);
-        },
-        injectBaseStyles: function injectBaseStyles() {
-            var existing = document.getElementById('capture-styles');
-            if (existing && document.head.contains(existing)) return;
-            if (existing) existing.remove();
-            var style = document.createElement('style');
-            style.id = 'capture-styles';
-            var css = '';
-            css += '#old-capture {position:absolute;top:0;left:0;width:100%;height:100vh;pointer-events:none;z-index:1000;display:flex;align-items:center;justify-content:center;}';
-            css += '#old-capture .capture-table {position:absolute;transform-origin:center top;font-size:100px;}';
-            css += '#app .capture-scoreboard {display:none !important;}';
-            css += '#app .capture-scoreboard__left-side,#app .capture-scoreboard__timer,#app .capture-scoreboard__timer-bg-wrapper,#app .capture-scoreboard__right-side {display:none !important;}';
-            css += 'body #app .capture:not(#old-capture) {display:none !important;}';
-            style.textContent = css;
-            document.head.appendChild(style);
-        },
-        updateClass: function updateClass(type) {
-            var el = this.data.customElement || document.getElementById('old-capture');
-            if (!el) return;
-            el.classList.remove('old-capture', 'old-capture-radar', 'old-capture-seroe');
-            if (type === "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E") {
-                el.classList.add('old-capture');
-            } else if (type === "\u0421\u0442\u0430\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E \u043D\u0430\u0434 \u0440\u0430\u0434\u0430\u0440\u043E\u043C") {
-                el.classList.add('old-capture-radar');
-            } else if (type === "\u0421\u0435\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E") {
-                el.classList.add('old-capture-seroe');
+            this.data.customElement = null;
+        }
+        var leftName = this.getLeftName() || "Team 1";
+        var leftKills = this.getLeftKills() || "0";
+        var rightName = this.getRightName() || "Team 2";
+        var rightKills = this.getRightKills() || "0";
+        var timer = this.getTimer() || "00:00";
+        var myImg = '';
+        var enemyImg = '';
+        var timerImg = '';
+        if (window.yorenovNewHudAssets && window.yorenovNewHudAssets.capture) {
+            myImg = window.yorenovNewHudAssets.capture.my || '';
+            enemyImg = window.yorenovNewHudAssets.capture.enemyies || '';
+            timerImg = window.yorenovNewHudAssets.capture.timer || '';
+        }
+        var customCapture = document.createElement('div');
+        customCapture.id = 'old-capture';
+        customCapture.className = 'capture old-capture';
+        var table = document.createElement('div');
+        table.className = 'capture-table';
+        var leftCol = document.createElement('div');
+        leftCol.className = 'capture-table__col';
+        var leftKillsEl = document.createElement('div');
+        leftKillsEl.className = 'capture-table__col-kills my';
+        leftKillsEl.textContent = leftKills;
+        if (myImg) {
+            leftKillsEl.style.backgroundImage = 'url(' + myImg + ')';
+        }
+        var leftNameEl = document.createElement('div');
+        leftNameEl.className = 'name';
+        leftNameEl.textContent = leftName;
+        leftCol.appendChild(leftKillsEl);
+        leftCol.appendChild(leftNameEl);
+        var timerEl = document.createElement('div');
+        timerEl.className = 'capture-table__timer';
+        timerEl.textContent = timer;
+        if (timerImg) {
+            timerEl.style.backgroundImage = 'url(' + timerImg + ')';
+        }
+        var rightCol = document.createElement('div');
+        rightCol.className = 'capture-table__col';
+        var rightNameEl = document.createElement('div');
+        rightNameEl.className = 'name';
+        rightNameEl.textContent = rightName;
+        var rightKillsEl = document.createElement('div');
+        rightKillsEl.className = 'capture-table__col-kills';
+        rightKillsEl.textContent = rightKills;
+        if (enemyImg) {
+            rightKillsEl.style.backgroundImage = 'url(' + enemyImg + ')';
+        }
+        rightCol.appendChild(rightNameEl);
+        rightCol.appendChild(rightKillsEl);
+        table.appendChild(leftCol);
+        table.appendChild(timerEl);
+        table.appendChild(rightCol);
+        customCapture.appendChild(table);
+        this.injectBaseStyles();
+        originalCapture.parentNode.insertBefore(customCapture, originalCapture);
+        document.querySelectorAll('.capture').forEach(function(el) {
+            if (el.id !== 'old-capture') el.style.display = 'none';
+        });
+        this.data.customElement = customCapture;
+        this.data.isInitialized = true;
+        this.applyStyles(this.data.selectedType || "\u0421\u0435\u0440\u043e\u0435 \u0442\u0430\u0431\u043B\u043E");
+        this.startUpdate();
+        console.log('(capture) Capture hooked');
+        return true;
+    },
+    getLeftName: function getLeftName() {
+        try {
+            var el = document.querySelector('.capture-scoreboard__left-side_name');
+            return el ? el.textContent.trim() : '';
+        } catch (e) {
+            return '';
+        }
+    },
+    getLeftKills: function getLeftKills() {
+        try {
+            var el = document.querySelector('.capture-scoreboard__left-side_score');
+            return el ? el.textContent.trim() : '0';
+        } catch (e) {
+            return '0';
+        }
+    },
+    getRightName: function getRightName() {
+        try {
+            var el = document.querySelector('.capture-scoreboard__right-side_name');
+            return el ? el.textContent.trim() : '';
+        } catch (e) {
+            return '';
+        }
+    },
+    getRightKills: function getRightKills() {
+        try {
+            var el = document.querySelector('.capture-scoreboard__right-side_score');
+            return el ? el.textContent.trim() : '0';
+        } catch (e) {
+            return '0';
+        }
+    },
+    getTimer: function getTimer() {
+        try {
+            var el = document.querySelector('.capture-scoreboard__timer-time');
+            return el ? el.textContent.trim() : '00:00';
+        } catch (e) {
+            return '00:00';
+        }
+    },
+    updateData: function updateData() {
+        if (!this.data.isInitialized || !this.data.customElement) return;
+        try {
+            var names = this.data.customElement.querySelectorAll('.name');
+            if (names.length >= 2) {
+                names[0].textContent = this.getLeftName() || "Team 1";
+                names[1].textContent = this.getRightName() || "Team 2";
             }
-            this.data.customElement = el;
-        },
-        applyStyles: function applyStyles(type) {
-            this.injectBaseStyles();
-            if (!this.data.customElement || !document.body.contains(this.data.customElement)) {
-                var existing = document.getElementById('old-capture');
-                if (existing) {
-                    this.data.customElement = existing;
-                } else {
-                    this.hookCapture();
-                }
+            var kills = this.data.customElement.querySelectorAll('.capture-table__col-kills');
+            if (kills.length >= 2) {
+                kills[0].textContent = this.getLeftKills() || "0";
+                kills[1].textContent = this.getRightKills() || "0";
             }
-            this.updateClass(type);
-            var styleElement = document.getElementById('capture-type-styles');
-            if (styleElement) styleElement.remove();
-            var extraStyles = document.createElement('style');
-            extraStyles.id = 'capture-type-styles';
-            var styles = '';
-            if (type === "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E") {
-                styles = '.old-capture .capture-table {background:linear-gradient(90deg,#00000000 9.52%,#00000000 52.29%,#00000000 95.95%);border-radius:0.46vh;bottom:6vh;padding:1.85vh;display:flex;align-items:center;justify-content:center;left:50%;transform:translateX(-50%);min-width:60vh;position:absolute;}' + '.old-capture .capture-table__col {display:flex;align-items:center;flex-direction:row;}' + '.old-capture .capture-table__col:first-child {justify-content:flex-end;margin-right:0.5vh;}' + '.old-capture .capture-table__col:last-child {justify-content:flex-start;margin-left:0.5vh;}' + '.old-capture .capture-table__col .name {color:#fff;font-size:2.41vh;font-style:italic;font-weight:700;text-transform:uppercase;font-family:"Open Sans","Arial",sans-serif;text-shadow:0 0 10px rgba(0,0,0,0.5);white-space:nowrap;}' + '.old-capture .capture-table__col-kills {align-items:center;background-size:cover;background-repeat:no-repeat;color:#fff;display:flex;font-size:1.67vh;font-style:italic;font-weight:700;height:3.24vh;justify-content:center;margin:0 0.74vh;transform-origin:right bottom;width:3.24vh;font-family:"Open Sans","Arial",sans-serif;flex-shrink:0;}' + '.old-capture .capture-table__timer {align-items:center;background-size:cover;background-repeat:no-repeat;color:#fff;display:flex;font-size:1.67vh;font-style:italic;font-weight:700;height:3.52vh;justify-content:center;margin:0 2.41vh;width:7.78vh;font-family:"Open Sans","Arial",sans-serif;flex-shrink:0;}';
-            } else if (type === "\u0421\u0442\u0430\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E \u043D\u0430\u0434 \u0440\u0430\u0434\u0430\u0440\u043E\u043C") {
-                styles = '.old-capture-radar .capture-table {flex-direction:column;min-width:35vh !important;background:rgba(0,0,0,.8) !important;padding:1.5vh 2vh !important;padding-top:3.6vh !important;border-radius:.46vh !important;box-shadow:none !important;align-items:flex-start !important;left:2.5vh;bottom:28vh;position:absolute;}' + '.old-capture-radar .capture-table__col {width:100% !important;min-width:100% !important;max-width:100% !important;height:3vh;flex-basis:100% !important;justify-content:flex-start !important;flex-direction:row !important;display:flex !important;align-items:center !important;}' + '.old-capture-radar .capture-table__col .name {order:1 !important;font-style:normal;font-size:2vh;color:#fff;font-family:"Open Sans",sans-serif !important;font-weight:700 !important;background:0 0 !important;padding:0 !important;width:auto !important;height:auto !important;}' + '.old-capture-radar .capture-table__col-kills {order:2 !important;color:#b8303a !important;font-size:2.5vh !important;font-style:normal;font-family:"Open Sans",sans-serif !important;font-weight:700 !important;background:0 0 !important;padding:0 !important;width:auto !important;height:auto !important;margin:0 !important;margin-left:1.5vh !important;}' + '.old-capture-radar .capture-table__col-kills.my {order:2 !important;margin:0 !important;color:#b8303a !important;font-size:2.5vh !important;font-style:normal;font-family:"Open Sans",sans-serif !important;font-weight:700 !important;background:0 0 !important;padding:0 !important;width:auto !important;height:auto !important;margin-left:1.5vh !important;}' + '.old-capture-radar .capture-table__timer {color:#26a62b !important;font-style:normal;font-size:2.5vh !important;position:absolute;top:.5vh;left:2vh;font-family:"Open Sans",sans-serif !important;font-weight:700 !important;background:0 0 !important;padding:0 !important;width:auto !important;height:auto !important;}';
-            } else if (type === "\u0421\u0435\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E") {
-                styles = '.old-capture-seroe .capture-table {background:#00000061;box-shadow:0 0 5vh 0 #00000044;border-radius:1vh;transform:scale(.9);padding:1.5vh 1.8vh;bottom:6vh;display:flex;align-items:center;justify-content:center;left:50%;transform:translateX(-50%) scale(.9);min-width:60vh;position:absolute;}' + '.old-capture-seroe .capture-table__col {display:flex;align-items:center;flex-direction:row;}' + '.old-capture-seroe .capture-table__col:first-child {justify-content:flex-end;margin-right:2.5vh;}' + '.old-capture-seroe .capture-table__col:last-child {justify-content:flex-start;margin-left:2.5vh;}' + '.old-capture-seroe .capture-table__col .name {color:#fff;font-size:2.41vh;font-family:"GothamPro Bold";font-style:normal;font-weight:700;text-transform:none;text-shadow:0 0 10px rgba(0,0,0,0.5);white-space:nowrap;}' + '.old-capture-seroe .capture-table__col-kills {color:#fff;font-style:normal;font-weight:900;font-size:1.8vh;font-family:"GothamPro Bold";align-items:center;display:flex;height:3.24vh;justify-content:center;margin:0 0.74vh;transform-origin:right bottom;width:auto;min-width:3.24vh;background:none !important;background-image:none !important;flex-shrink:0;}' + '.old-capture-seroe .capture-table__col-kills.small {font-size:1.3vh;}' + '.old-capture-seroe .capture-table__col-kills.my {margin-right:1.3vh;margin-left:0!important;background:none !important;background-image:none !important;}' + '.old-capture-seroe .capture-table__col-kills {margin-left:1.3vh;background:none !important;background-image:none !important;}' + '.old-capture-seroe .capture-table__timer {background:#272727;color:#fff;font-style:normal;font-weight:900;font-size:1.8vh;font-family:"GothamPro Bold";border-radius:.5vh;align-items:center;display:flex;height:3.52vh;justify-content:center;padding:0 1.5vh;min-width:7.78vh;background-image:none !important;flex-shrink:0;}';
+            var timer = this.data.customElement.querySelector('.capture-table__timer');
+            if (timer) {
+                timer.textContent = this.getTimer() || "00:00";
             }
-            extraStyles.textContent = styles;
-            document.head.appendChild(extraStyles);
-            console.log('[CAPTURE] Style applied: ' + type);
-        },
-        showCaptureDialog: function showCaptureDialog() {
-            var self = this;
-            var captureOptions = ["\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E", "\u0421\u0442\u0430\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E \u043D\u0430\u0434 \u0440\u0430\u0434\u0430\u0440\u043E\u043C", "\u0421\u0435\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E"];
-            var optionsString = captureOptions.join("<n>");
-            yorenov.createDialog(2, "Scriptloader CAPTURE", "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u0441\u0442\u0438\u043B\u044C \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F capture:", "\u0412\u044B\u0431\u0440\u0430\u0442\u044C", "\u0417\u0430\u043A\u0440\u044B\u0442\u044C", optionsString, function(selected) {
-                try {
-                    var cleanSelection = selected.replace(/<[^>]*>/g, "").trim();
-                    if (captureOptions.includes(cleanSelection)) {
-                        self.data.selectedType = cleanSelection;
-                        self.injectBaseStyles();
-                        if (!document.getElementById('old-capture')) {
-                            self.hookCapture();
-                        }
-                        self.applyStyles(cleanSelection);
-                        yorenovPickNote(cleanSelection);
-                        yorenov.socket.saveConfig("hudloader_capture.json", JSON.stringify({
-                            captureType: cleanSelection
-                        }));
-                        console.log('[CAPTURE]               : ' + cleanSelection);
-                    }
-                } catch (e) {
-                    console.log('[CAPTURE]       : ' + e);
-                }
-            }, function() {});
-        },
-        init: function init() {
-            if (typeof isModuleEnabled === 'function' && !isModuleEnabled("capture")) {
-                console.log('[yorenov] Capture disabled');
-                return;
-            }
-            var self = this;
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "http://localhost:3874/load_config?file=hudloader_capture.json", true);
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === XMLHttpRequest.DONE) {
-                    if (xhr.status === 200) {
-                        try {
-                            var data = xhr.responseText;
-                            if (data && data !== "null" && data !== "undefined") {
-                                var parsed = JSON.parse(data);
-                                if (parsed.captureType) {
-                                    self.data.selectedType = parsed.captureType;
-                                    console.log('[CAPTURE] loaded: ' + parsed.captureType);
-                                    var paint = function() {
-                                        if (document.getElementById('old-capture')) self.applyStyles(parsed.captureType);
-                                    };
-                                    paint();
-                                    setTimeout(paint, 400);
-                                    setTimeout(paint, 1500);
-                                }
-                            }
-                        } catch (e) {
-                            console.log('[CAPTURE]                : ' + e);
-                        }
-                    }
-                }
-            };
-            xhr.send();
-            yorenov.registerCommand("/capture", function() {
-                self.showCaptureDialog();
-                return 0;
-            });
-            setTimeout(function() {
-                if (!self.data.isInitialized) {
+        } catch (e) {}
+    },
+    startUpdate: function startUpdate() {
+        if (this.data.updateInterval) clearInterval(this.data.updateInterval);
+        var self = this;
+        this.data.updateInterval = setInterval(function() {
+            var custom = document.getElementById('old-capture');
+            var alive = custom && document.body.contains(custom);
+            if (!alive) {
+                var originalCapture = document.querySelector('.capture');
+                if (originalCapture) {
+                    self.data.isInitialized = false;
                     self.hookCapture();
-                    if (self.data.selectedType && self.data.selectedType !== "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E") {
+                    if (self.data.selectedType) {
                         setTimeout(function() {
                             self.applyStyles(self.data.selectedType);
-                        }, 100);
+                        }, 50);
                     }
                 }
-            }, 100);
-            setTimeout(function() {
-                if (!self.data.isInitialized) self.hookCapture();
-            }, 300);
-            setTimeout(function() {
-                if (!self.data.isInitialized) self.hookCapture();
-            }, 500);
-            setTimeout(function() {
-                if (!self.data.isInitialized) self.hookCapture();
-            }, 1000);
-            setTimeout(function() {
-                if (!self.data.isInitialized) self.hookCapture();
-            }, 2000);
-            setTimeout(function() {
-                if (document.body) {
-                    var observer = new MutationObserver(function() {
-                        if (!self.data.isInitialized || !document.getElementById('old-capture')) {
-                            var capture = document.querySelector('.capture');
-                            if (capture) {
-                                self.hookCapture();
-                                if (self.data.selectedType && self.data.selectedType !== "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E") {
-                                    setTimeout(function() {
-                                        self.applyStyles(self.data.selectedType);
-                                    }, 100);
-                                }
+                return;
+            }
+            document.querySelectorAll('.capture').forEach(function(el) {
+                if (el.id !== 'old-capture' && el.style.display !== 'none') {
+                    el.style.display = 'none';
+                }
+            });
+            self.updateData();
+        }, 500);
+    },
+    injectBaseStyles: function injectBaseStyles() {
+        var existing = document.getElementById('capture-styles');
+        if (existing && document.head.contains(existing)) return;
+        if (existing) existing.remove();
+        var style = document.createElement('style');
+        style.id = 'capture-styles';
+        var css = '';
+        css += '#old-capture {position:absolute;top:0;left:0;width:100%;height:100vh;pointer-events:none;z-index:1000;display:flex;align-items:center;justify-content:center;}';
+        css += '#old-capture .capture-table {position:absolute;transform-origin:center top;font-size:100px;}';
+        css += '#app .capture-scoreboard {display:none !important;}';
+        css += '#app .capture-scoreboard__left-side,#app .capture-scoreboard__timer,#app .capture-scoreboard__timer-bg-wrapper,#app .capture-scoreboard__right-side {display:none !important;}';
+        css += 'body #app .capture:not(#old-capture) {display:none !important;}';
+        style.textContent = css;
+        document.head.appendChild(style);
+    },
+    updateClass: function updateClass(type) {
+        var el = this.data.customElement || document.getElementById('old-capture');
+        if (!el) return;
+        el.classList.remove('old-capture', 'old-capture-radar', 'old-capture-seroe');
+        if (type === "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E") {
+            el.classList.add('old-capture');
+        } else if (type === "\u0421\u0442\u0430\u0440\u043e\u0435 \u0442\u0430\u0431\u043B\u043E \u043D\u0430\u0434 \u0440\u0430\u0434\u0430\u0440\u043E\u043C") {
+            el.classList.add('old-capture-radar');
+        } else if (type === "\u0421\u0435\u0440\u043e\u0435 \u0442\u0430\u0431\u043B\u043E") {
+            el.classList.add('old-capture-seroe');
+        }
+        this.data.customElement = el;
+    },
+    applyStyles: function applyStyles(type) {
+        this.injectBaseStyles();
+        if (!this.data.customElement || !document.body.contains(this.data.customElement)) {
+            var existing = document.getElementById('old-capture');
+            if (existing) {
+                this.data.customElement = existing;
+            } else {
+                this.hookCapture();
+            }
+        }
+        this.updateClass(type);
+        var styleElement = document.getElementById('capture-type-styles');
+        if (styleElement) styleElement.remove();
+        var extraStyles = document.createElement('style');
+        extraStyles.id = 'capture-type-styles';
+        var styles = '';
+        if (type === "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E") {
+            styles = '.old-capture .capture-table {background:linear-gradient(90deg,#00000000 9.52%,#00000000 52.29%,#00000000 95.95%);border-radius:0.46vh;bottom:6vh;padding:1.85vh;display:flex;align-items:center;justify-content:center;left:50%;transform:translateX(-50%);min-width:60vh;position:absolute;}' + '.old-capture .capture-table__col {display:flex;align-items:center;flex-direction:row;}' + '.old-capture .capture-table__col:first-child {justify-content:flex-end;margin-right:0.5vh;}' + '.old-capture .capture-table__col:last-child {justify-content:flex-start;margin-left:0.5vh;}' + '.old-capture .capture-table__col .name {color:#fff;font-size:2.41vh;font-style:italic;font-weight:700;text-transform:uppercase;font-family:"Open Sans","Arial",sans-serif;text-shadow:0 0 10px rgba(0,0,0,0.5);white-space:nowrap;}' + '.old-capture .capture-table__col-kills {align-items:center;background-size:cover;background-repeat:no-repeat;color:#fff;display:flex;font-size:1.67vh;font-style:italic;font-weight:700;height:3.24vh;justify-content:center;margin:0 0.74vh;transform-origin:right bottom;width:3.24vh;font-family:"Open Sans","Arial",sans-serif;flex-shrink:0;}' + '.old-capture .capture-table__timer {align-items:center;background-size:cover;background-repeat:no-repeat;color:#fff;display:flex;font-size:1.67vh;font-style:italic;font-weight:700;height:3.52vh;justify-content:center;margin:0 2.41vh;width:7.78vh;font-family:"Open Sans","Arial",sans-serif;flex-shrink:0;}';
+        } else if (type === "\u0421\u0442\u0430\u0440\u043e\u0435 \u0442\u0430\u0431\u043B\u043E \u043D\u0430\u0434 \u0440\u0430\u0434\u0430\u0440\u043E\u043C") {
+            styles = '.old-capture-radar .capture-table {flex-direction:column;min-width:35vh !important;background:rgba(0,0,0,.8) !important;padding:1.5vh 2vh !important;padding-top:3.6vh !important;border-radius:.46vh !important;box-shadow:none !important;align-items:flex-start !important;left:2.5vh;bottom:28vh;position:absolute;}' + '.old-capture-radar .capture-table__col {width:100% !important;min-width:100% !important;max-width:100% !important;height:3vh;flex-basis:100% !important;justify-content:flex-start !important;flex-direction:row !important;display:flex !important;align-items:center !important;}' + '.old-capture-radar .capture-table__col .name {order:1 !important;font-style:normal;font-size:2vh;color:#fff;font-family:"Open Sans",sans-serif !important;font-weight:700 !important;background:0 0 !important;padding:0 !important;width:auto !important;height:auto !important;}' + '.old-capture-radar .capture-table__col-kills {order:2 !important;color:#b8303a !important;font-size:2.5vh !important;font-style:normal;font-family:"Open Sans",sans-serif !important;font-weight:700 !important;background:0 0 !important;padding:0 !important;width:auto !important;height:auto !important;margin:0 !important;margin-left:1.5vh !important;}' + '.old-capture-radar .capture-table__col-kills.my {order:2 !important;margin:0 !important;color:#b8303a !important;font-size:2.5vh !important;font-style:normal;font-family:"Open Sans",sans-serif !important;font-weight:700 !important;background:0 0 !important;padding:0 !important;width:auto !important;height:auto !important;margin-left:1.5vh !important;}' + '.old-capture-radar .capture-table__timer {color:#26a62b !important;font-style:normal;font-size:2.5vh !important;position:absolute;top:.5vh;left:2vh;font-family:"Open Sans",sans-serif !important;font-weight:700 !important;background:0 0 !important;padding:0 !important;width:auto !important;height:auto !important;}';
+        } else if (type === "\u0421\u0435\u0440\u043e\u0435 \u0442\u0430\u0431\u043B\u043E") {
+            styles = '.old-capture-seroe .capture-table {background:#00000061;box-shadow:0 0 5vh 0 #00000044;border-radius:1vh;transform:scale(.9);padding:1.5vh 1.8vh;bottom:6vh;display:flex;align-items:center;justify-content:center;left:50%;transform:translateX(-50%) scale(.9);min-width:60vh;position:absolute;}' + '.old-capture-seroe .capture-table__col {display:flex;align-items:center;flex-direction:row;}' + '.old-capture-seroe .capture-table__col:first-child {justify-content:flex-end;margin-right:2.5vh;}' + '.old-capture-seroe .capture-table__col:last-child {justify-content:flex-start;margin-left:2.5vh;}' + '.old-capture-seroe .capture-table__col .name {color:#fff;font-size:2.41vh;font-family:"GothamPro Bold";font-style:normal;font-weight:700;text-transform:none;text-shadow:0 0 10px rgba(0,0,0,0.5);white-space:nowrap;}' + '.old-capture-seroe .capture-table__col-kills {color:#fff;font-style:normal;font-weight:900;font-size:1.8vh;font-family:"GothamPro Bold";align-items:center;display:flex;height:3.24vh;justify-content:center;margin:0 0.74vh;transform-origin:right bottom;width:auto;min-width:3.24vh;background:none !important;background-image:none !important;flex-shrink:0;}' + '.old-capture-seroe .capture-table__col-kills.small {font-size:1.3vh;}' + '.old-capture-seroe .capture-table__col-kills.my {margin-right:1.3vh;margin-left:0!important;background:none !important;background-image:none !important;}' + '.old-capture-seroe .capture-table__col-kills {margin-left:1.3vh;background:none !important;background-image:none !important;}' + '.old-capture-seroe .capture-table__timer {background:#272727;color:#fff;font-style:normal;font-weight:900;font-size:1.8vh;font-family:"GothamPro Bold";border-radius:.5vh;align-items:center;display:flex;height:3.52vh;justify-content:center;padding:0 1.5vh;min-width:7.78vh;background-image:none !important;flex-shrink:0;}';
+        }
+        extraStyles.textContent = styles;
+        document.head.appendChild(extraStyles);
+        console.log('[CAPTURE] Style applied: ' + type);
+    },
+    init: function init() {
+        if (typeof isModuleEnabled === 'function' && !isModuleEnabled("capture")) {
+            console.log('[yorenov] Capture disabled');
+            return;
+        }
+        var self = this;
+        self.data.selectedType = "\u0421\u0435\u0440\u043e\u0435 \u0442\u0430\u0431\u043B\u043E";
+
+        try {
+            yorenov.socket.saveConfig("hudloader_capture.json", JSON.stringify({
+                captureType: self.data.selectedType
+            }));
+        } catch(e) {}
+        var paint = function() {
+            if (document.getElementById('old-capture')) {
+                self.applyStyles(self.data.selectedType);
+            } else {
+                self.hookCapture();
+            }
+        };
+
+        setTimeout(paint, 100);
+        setTimeout(paint, 500);
+        setTimeout(paint, 1500);
+        setTimeout(function() {
+            if (document.body) {
+                var observer = new MutationObserver(function() {
+                    if (!self.data.isInitialized || !document.getElementById('old-capture')) {
+                        var capture = document.querySelector('.capture');
+                        if (capture) {
+                            self.hookCapture();
+                            if (self.data.selectedType) {
+                                setTimeout(function() {
+                                    self.applyStyles(self.data.selectedType);
+                                }, 100);
                             }
                         }
-                    });
-                    observer.observe(document.body, {
-                        childList: true,
-                        subtree: true
-                    });
-                }
-            }, 100);
+                    }
+                });
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }, 100);
             setInterval(function() {
                 if (!self.data.isInitialized || !document.getElementById('old-capture')) {
                     var capture = document.querySelector('.capture');

@@ -776,7 +776,6 @@ var yorenov = {
                 window.interface("Hud").info.weapon = window.interface("Hud").info.weapon;
                 window.interface("Hud").info.show = 0;
                 window.interface("Hud").hideGreenZoneTab();
-                window.sendChatInput("/hudscalefix");
                 window.openInterface('GameText');
             }, 2500, "YORENOV MODS HUD");
         }

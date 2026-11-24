@@ -128,13 +128,8 @@ window.yorenovNewHudAssets = window.yorenovNewHudAssets = {
             "weapon_back": "",
             "zone": "data:image/png;base64,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"
         },
-    "capture": {
-        "enemyies": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAjCAYAAAD8BaggAAAAAXNSR0IArs4c6QAAA45JREFUWEe1mE9oE0EUxme3HjxUrOBB9NKCpZ603iyC6EkUxfbQU1Er0pv4p5gSPEhbEJJZxBRPNWnXJmkCCdSVovQQoaJ4qQGLl4KtjQhlu7Yh22RJOl0ydqRb1nR3djZJc91v3vvle483b5cDdfxhjA8Gg0Fha2vrnK7rmeXl5b5AIJBzk4JjEcdisdOyLB/v7++fsdOHw+FuhNAzXddbDU2pVFrIZDIddlDT09Mn0ul0W6lU+unz+TLkHBUIY3wgmUw+yWazQ0RslYAEXVtb829ubvZYwWqalpdl+YIgCN+M58TJ8fHx57lc7ubq6uohAEAOIdRCwKlAqVSqY3Fx8Ys5EYEqFovXvV5vJhQKPcAYD5bL5Uaa07qu5xVF6RoeHv5gOJnL5VoVRdk9hjE+S6CpQIlE4qnhDktpWTWFQgGYYQAAKoSwybFksVhsZmNj4zJrIhadBQw59hFCeJEKhDFuHBsb+6Hr+jGWRCwaGxhydAhCOEgFsuoflqR2GgoM4Hn+ks/nm6UCTU1N3VcUZaQWCOMsDYZoIIS7vWzb1PF4PKGqanetQE4w5v6xdYjMCVEUvyOETtYCxAADOI4b8fv9D408lg7Nzc21pdPphf2G2YnfBSGUqECSJN2SZXmiWiAWZ4zYCKEj5qvF0qF4PB5SVfVuNUBuYAAA89vutJvz7AEi91c4HP5aLBbPuAVyCbOnfyybGmN8dHR09M9+w5D4GOM7giC8pjqUTCZ71tfXo26A3DpjxOZ5vsVYO2ybOhqNvioUCn2sQNXCAAB+QQibK/Ps6aFIJPJZ07TzLEA1wJDwExDCXioQxrgpGAz+dtpvSJAaYUiIR9srR4AKJEnSVVmW3zm5UwcY0tD/FjIq0OTkpJDP5x/TgOoBY17IqEBOC1mdYIg7b7fd6bT64/81dSQSea9p2hUrYb1gSGzz/kN1KJFI3Mtmsy8rRfWEsRqGtoORXBuiKL5BCF0zRHWEUQEAveab3bFkO+O8URTFTwih9jrCzPM831k5lZmAiIi8/C0tLaVWVlZOOY0Ap+eVC5ij3k7g9Xqby+UymROHnYLYPGcqkePVYRZ4PJ52juPI24BbKOYSuQIiYo/H08txnMjqktsSuQYiBwYGBsgS/sIBqqoSVQW0A0UWqds2UFWXqGqgnfJJHMfdqAgyhBAKuP0wZec20wcri0bvxBhnGhoaZllmC2v/Ed1fCdI/QqRpnsoAAAAASUVORK5CYII=",
-        "my": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAjCAYAAAD8BaggAAAAAXNSR0IArs4c6QAAA45JREFUWEe1mE9oE0EUxme3HjxUrOBB9NKCpZ603iyC6EkUxfbQU1Er0pv4p5gSPEhbEJJZxBRPNWnXJmkCCdSVovQQoaJ4qQGLl4KtjQhlu7Yh22RJOl0ydqRb1nR3djZJc91v3vvle483b5cDdfxhjA8Gg0Fha2vrnK7rmeXl5b5AIJBzk4JjEcdisdOyLB/v7++fsdOHw+FuhNAzXddbDU2pVFrIZDIddlDT09Mn0ul0W6lU+unz+TLkHBUIY3wgmUw+yWazQ0RslYAEXVtb829ubvZYwWqalpdl+YIgCN+M58TJ8fHx57lc7ubq6uohAEAOIdRCwKlAqVSqY3Fx8Ys5EYEqFovXvV5vJhQKPcAYD5bL5Uaa07qu5xVF6RoeHv5gOJnL5VoVRdk9hjE+S6CpQIlE4qnhDktpWTWFQgGYYQAAKoSwybFksVhsZmNj4zJrIhadBQw59hFCeJEKhDFuHBsb+6Hr+jGWRCwaGxhydAhCOEgFsuoflqR2GgoM4Hn+ks/nm6UCTU1N3VcUZaQWCOMsDYZoIIS7vWzb1PF4PKGqanetQE4w5v6xdYjMCVEUvyOETtYCxAADOI4b8fv9D408lg7Nzc21pdPphf2G2YnfBSGUqECSJN2SZXmiWiAWZ4zYCKEj5qvF0qF4PB5SVfVuNUBuYAAA89vutJvz7AEi91c4HP5aLBbPuAVyCbOnfyybGmN8dHR09M9+w5D4GOM7giC8pjqUTCZ71tfXo26A3DpjxOZ5vsVYO2ybOhqNvioUCn2sQNXCAAB+QQibK/Ps6aFIJPJZ07TzLEA1wJDwExDCXioQxrgpGAz+dtpvSJAaYUiIR9srR4AKJEnSVVmW3zm5UwcY0tD/FjIq0OTkpJDP5x/TgOoBY17IqEBOC1mdYIg7b7fd6bT64/81dSQSea9p2hUrYb1gSGzz/kN1KJFI3Mtmsy8rRfWEsRqGtoORXBuiKL5BCF0zRHWEUQEAveab3bFkO+O8URTFTwih9jrCzPM831k5lZmAiIi8/C0tLaVWVlZOOY0Ap+eVC5ij3k7g9Xqby+UymROHnYLYPGcqkePVYRZ4PJ52juPI24BbKOYSuQIiYo/H08txnMjqktsSuQYiBwYGBsgS/sIBqqoSVQW0A0UWqds2UFWXqGqgnfJJHMfdqAgyhBAKuP0wZec20wcri0bvxBhnGhoaZllmC2v/Ed1fCdI/QqRpnsoAAAAASUVORK5CYII=",
-        "timer": "data:image/png;base64,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"
-    },
     "speedometer": {},
-    "style": "@font-face{font-family:'GothamPro Light';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_light.ttf') format('truetype');font-weight:300;font-style:normal}@font-face{font-family:'GothamPro Light Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_lightitalic.ttf') format('truetype');font-weight:300;font-style:italic}@font-face{font-family:'GothamPro Regular';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro.ttf') format('truetype');font-weight:400;font-style:normal}@font-face{font-family:'GothamPro Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_italic.ttf') format('truetype');font-weight:400;font-style:italic}@font-face{font-family:'GothamPro Medium';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_medium.ttf') format('truetype');font-weight:500;font-style:normal}@font-face{font-family:'GothamPro Medium Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_mediumitalic.ttf') format('truetype');font-weight:500;font-style:italic}@font-face{font-family:'GothamPro Bold';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_bold.ttf') format('truetype');font-weight:700;font-style:normal}@font-face{font-family:'GothamPro Bold Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_bolditalic.ttf') format('truetype');font-weight:700;font-style:italic}@font-face{font-family:'GothamPro Black';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_black.ttf') format('truetype');font-weight:900;font-style:normal}@font-face{font-family:'GothamPro Black Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_blackitalic.ttf') format('truetype');font-weight:900;font-style:italic}#app .hud-hassle-map>img,#app .hud-radmir-radar__radar-bats,#app .hud-radmir-radar__radar-border,#app .hud-radmir-radar__radar-border_helloween,#app .hud-radmir-radar__radar-border_new-year,#app .hud-radmir-radar__radar>img,#app .hud-radmir-wanted,#app .overlay-container,#app .scrollable-container_type_1 .scrollable-container__rail_y,#app .vignette,#app .window .modal__pattern-wrapper,.hud-hassle-map .map-mask,body #app .hud-radmir-info{display:none}#app .hud-circle-green,#app .hud-round-green,#app .immortality-progress-bar .circle-progress__svg,#app .immortality-progress-bar .immortality-progress-bar_background,body #app .hud-radmir-greenzone{display:none!important}.OLD-RADMIR-hud-Container .OLD-RADMIR-logo{width:auto!important;height:auto!important;display:flex;align-items:center;transform-origin:top right}.OLD-RADMIR-hud-Container .OLD-RADMIR-logo img{width:20.2vh!important;height:5vh!important;max-width:20.2vh!important;max-height:5vh!important;object-fit:contain!important}.OLD-RADMIR-hud-Container .OLD-RADMIR-logo__bonus{position:absolute!important;top:auto!important;bottom:-2.4vh!important;right:.35vh!important;left:auto!important;margin:0!important;width:3vh!important;height:3vh!important;z-index:6!important}.OLD-RADMIR-hud-Container #OLD-RADMIR-ammo__in-clip{font-family:'GothamPro Black Italic',sans-serif;font-weight:900;font-style:italic;font-size:2.27vh!important;text-shadow:0 0 .46vh #00000080}.OLD-RADMIR-hud-Container #OLD-RADMIR-ammo__total,.OLD-RADMIR-hud-Container .OLD-RADMIR-param__amount{font-family:'GothamPro Light Italic',sans-serif;font-weight:300;font-size:1.67vh!important;text-shadow:0 0 .46vh #000000b3;font-style:italic}.OLD-RADMIR-hud-Container #OLD-RADMIR-cash__value{font-family:'GothamPro Black Italic',sans-serif;font-weight:900;font-style:italic;font-size:2.59vh!important;text-shadow:0 0 .46vh #00000080}.OLD-RADMIR-hud-Container .OLD-RADMIR-cash__icon{width:2.4vh!important;height:2.4vh!important;margin-right:13px;margin-top:1px}.OLD-RADMIR-hud-Container .OLD-RADMIR-param__amount{width:3.24vh}.OLD-RADMIR-hud-Container .OLD-RADMIR-param__progress,.OLD-RADMIR-hud-Container .OLD-RADMIR-progress__value{width:9.26vh;height:.46vh;border-radius:.46vh}.OLD-RADMIR-hud-Container .OLD-RADMIR-param__armour .OLD-RADMIR-param__icon,.OLD-RADMIR-hud-Container .OLD-RADMIR-param__health .OLD-RADMIR-param__icon,.OLD-RADMIR-hud-Container .OLD-RADMIR-param__hunger .OLD-RADMIR-param__icon{width:2vh!important;height:2vh!important}.OLD-RADMIR-hud-Container .OLD-RADMIR-wanted__row>img{width:2.3vh!important;height:1.8vh!important;padding:.19vh .28vh!important}.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__main{left:5.8vw!important;right:auto!important;top:auto!important;bottom:27vh!important}.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__image{width:3.6vh!important;height:4.5vh!important;max-width:3.6vh!important;max-height:4.5vh!important}.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__text{color:#fff;text-shadow:3px 3px 5px #00000080}.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__text div:first-child{font-family:'GothamPro Black','GothamPro Bold',Arial,sans-serif;font-size:13px;font-weight:900;text-transform:uppercase}.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__text div:last-child{color:hsl(0deg 0% 100% / 70%);font-size:12px;font-weight:500;margin-top:5px}body .authorization{background-color:transparent}#app .authorization{background-image:none;background-size:auto 100vh}#app .modal__title{letter-spacing:normal;padding-bottom:1.5vh}#app .window-table__item{height:4.3vh;border-radius:.3vh;box-shadow:none}.OLD-RADMIR-logo,.OLD-RADMIR-logo img{max-width:24vh!important;max-height:4vh!important;object-fit:contain!important}.OLD-RADMIR-weapon__back,.OLD-RADMIR-weapon__icon{max-width:37vh!important;max-height:16.6vh!important;object-fit:contain!important}.OLD-RADMIR-green-zone__image{max-width:4vh!important;max-height:4vh!important;object-fit:contain!important}.OLD-RADMIR{width:100vw;height:100vh;position:relative}.OLD-RADMIR-logo,.OLD-RADMIR-logo img{width:24vh!important;height:4vh!important;display:block!important}.OLD-RADMIR-logo{position:absolute;right:4vh;top:1.66vh;transform-origin:top right}.OLD-RADMIR-logo img{object-fit:contain!important}.OLD-RADMIR-logo__bonus{background:radial-gradient(93.1% 93.1% at 126.72% 6.9%,#eb00ff 0,#eb00ff00 100%),linear-gradient(129.39deg,#f5be09 30.88%,#e9651b 98.06%);width:2.52vh;height:2.52vh;display:flex;align-items:center;justify-content:center;font-size:1.57vh;color:#fff;position:absolute;bottom:-.46vh;right:-.19vh;border-radius:50%;font-style:italic;font-weight:900}.OLD-RADMIR-weapon__back,.OLD-RADMIR-weapon__icon{width:37vh!important;height:16.6vh!important;object-fit:contain!important}.OLD-RADMIR-hud{position:relative;top:2vh;right:0}.OLD-RADMIR-weapon__back{position:absolute;right:4.17vh;top:9.81vh}.OLD-RADMIR-weapon__icon{position:absolute;right:5.74vh;top:11.2vh}.OLD-RADMIR-hud .OLD-RADMIR-weapon__ammo{position:absolute;right:8.33vh;top:20.37vh;display:flex;align-items:flex-end;justify-content:center;color:#fff;width:auto;min-width:7.41vh;text-align:center;white-space:nowrap;pointer-events:none;z-index:1}.OLD-RADMIR-weapon__ammo #OLD-RADMIR-ammo__in-clip{font-family:GothamPro,'GothamPro Black','GothamPro Black Italic',Arial,sans-serif;font-weight:900;font-style:italic;color:#fff;font-size:2.27vh;margin-right:.55vh;text-shadow:0 0 .46vh #00000080;display:inline-block}.OLD-RADMIR-weapon__ammo #OLD-RADMIR-ammo__total{font-family:GothamPro,'GothamPro Light','GothamPro Light Italic',Arial,sans-serif;font-weight:300;font-style:italic;color:#fff;font-size:1.67vh;text-shadow:0 0 .46vh #000000b3;display:inline-block}.OLD-RADMIR-hud .OLD-RADMIR-hud__cash{position:absolute;right:22.22vh;top:12.96vh;display:inline-flex;align-items:center}.OLD-RADMIR-cash__icon{margin-right:1.2vh;margin-top:.09vh;width:2.4vh;height:2.4vh}.OLD-RADMIR-hud__cash #OLD-RADMIR-cash__value{font-family:'GothamPro Black Italic';font-weight:900;font-style:italic;color:#fff;display:inline-block;font-size:2.59vh;text-shadow:0 0 .46vh #00000080;margin-top:-2.78vh;margin-left:3.43vh}.OLD-RADMIR-hud .OLD-RADMIR-hud__params{width:15.74vh;position:absolute;top:16.67vh;right:23.61vh}.OLD-RADMIR-param{display:inline-flex;align-items:center}.OLD-RADMIR-param__icon{margin-right:1.11vh;width:1.56vh;height:1.56vh;object-fit:contain}.OLD-RADMIR-param__progress,.OLD-RADMIR-progress__value{width:9.26vh;height:.46vh;background-color:#0000004d;border-radius:.46vh}.OLD-RADMIR-param__circle{position:absolute;right:-.43vh;top:50%;transform:translateY(-50%);width:.85vh;height:.93vh;margin:0;object-fit:contain}.OLD-RADMIR-progress__value{border-radius:.46vh;position:relative}.OLD-RADMIR-param__amount{font-family:'GothamPro Light Italic';font-weight:300;font-style:italic;margin-left:.93vh;width:3.24vh;text-align:left;color:#fff;font-size:1.67vh;text-shadow:0 0 .76vh #00000080}.OLD-RADMIR-param__armour .OLD-RADMIR-param__progress,.OLD-RADMIR-param__health .OLD-RADMIR-param__progress{margin-top:-.93vh;margin-left:2.55vh}.OLD-RADMIR-param__health{margin-left:2.22vh;margin-top:.25vh}.OLD-RADMIR-param__health .OLD-RADMIR-progress__value{width:50%;background-color:#ed2e2e}.OLD-RADMIR-param__health .OLD-RADMIR-param__amount{margin-left:12.78vh;margin-top:-1.15vh}.OLD-RADMIR-param__armour{margin-left:1.39vh;margin-top:.51vh}.OLD-RADMIR-param__armour .OLD-RADMIR-param__icon{margin-right:1.3vh;margin-top:.69vh;width:1.56vh;height:1.56vh;object-fit:contain}.OLD-RADMIR-param__armour .OLD-RADMIR-progress__value{width:50%;background-color:#526ee6}.OLD-RADMIR-param__armour .OLD-RADMIR-param__amount{margin-left:12.78vh;margin-top:-1.15vh}.OLD-RADMIR-param__hunger .OLD-RADMIR-param__progress{margin-top:-1.06vh;margin-left:2.55vh}.OLD-RADMIR-param__hunger{margin-left:.46vh;margin-top:.51vh}.OLD-RADMIR-param__hunger .OLD-RADMIR-progress__value{width:50%;background-color:#ff872e}.OLD-RADMIR-param__hunger .OLD-RADMIR-param__amount{margin-left:12.78vh;margin-top:-1.21vh}.OLD-RADMIR-param__breath .OLD-RADMIR-param__progress{margin-top:-1.94vh;margin-left:3.89vh}.OLD-RADMIR-param__breath{margin-left:-2.13vh;margin-top:2.04vh}.OLD-RADMIR-param__breath .OLD-RADMIR-progress__value{width:99%;background-color:#fff;box-shadow:rgb(255 255 255 / .5) 0 0 .46vh 0}.OLD-RADMIR-param__breath .OLD-RADMIR-param__amount{margin-left:14.17vh;margin-top:-1.21vh}.OLD-RADMIR-hud__wanted{position:absolute;right:6.48vh;top:23.15vh}.OLD-RADMIR-wanted__back{position:absolute;right:0;top:2.31vh}.OLD-RADMIR-wanted__row{display:flex;flex-direction:row;position:absolute;right:1.39vh;top:2.96vh}.OLD-RADMIR-wanted__row>img{height:1.9vh;width:2.31vh;padding:.19vh .28vh}.OLD-RADMIR-hud__wanted--always-show .OLD-RADMIR-wanted__inactive{opacity:.3}.OLD-RADMIR-green-zone__main{position:fixed;right:147vh!important;top:70vh!important;display:flex;align-items:center}.OLD-RADMIR-green-zone__image{margin-right:.96vh;width:4vh!important;height:4vh!important;object-fit:contain!important}.OLD-RADMIR-green-zone__text{color:#fff;text-shadow:.28vh .28vh .46vh #00000080}.OLD-RADMIR-green-zone__text div:first-child{font-size:1.2vh;font-weight:900;text-transform:uppercase}.OLD-RADMIR-green-zone__text div:last-child{color:hsl(0deg 0% 100% / 70%);font-size:1.11vh;font-weight:500;margin-top:.46vh}.OLD-RADMIR-param__freeze{transform:translateY(100%);position:absolute;top:96vh;left:8.8vh;background:rgb(114 205 223 / .45);width:22vh;height:.95vh;border-radius:1vh;border:.2vh solid;overflow:hidden}.OLD-RADMIR-freeze__value{height:100%;width:0%;border-radius:.3vh;background:#72cddf}#app .voice-chat,#app .voice-chat_controls{display:flex!important}#app .modal-container-wrapper{background-size:100%;border:0;box-shadow:none;transform:scale(.8);border-radius:1.34vh}#app .login-form__button,#app .login-form__button_active{border-radius:.6vh}#app .immortality-progress-bar .immortality-progress-bar__icon{left:-7vh!important;bottom:-2.2vh!important}",
+    "style": "@font-face {\n    font-family: 'GothamPro Light';\n    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_light.ttf') format('truetype');\n    font-weight: 300;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'GothamPro Light Italic';\n    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_lightitalic.ttf') format('truetype');\n    font-weight: 300;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'GothamPro Regular';\n    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro.ttf') format('truetype');\n    font-weight: 400;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'GothamPro Italic';\n    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_italic.ttf') format('truetype');\n    font-weight: 400;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'GothamPro Medium';\n    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_medium.ttf') format('truetype');\n    font-weight: 500;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'GothamPro Medium Italic';\n    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_mediumitalic.ttf') format('truetype');\n    font-weight: 500;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'GothamPro Bold';\n    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_bold.ttf') format('truetype');\n    font-weight: 700;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'GothamPro Bold Italic';\n    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_bolditalic.ttf') format('truetype');\n    font-weight: 700;\n    font-style: italic;\n}\n\n@font-face {\n    font-family: 'GothamPro Black';\n    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_black.ttf') format('truetype');\n    font-weight: 900;\n    font-style: normal;\n}\n\n@font-face {\n    font-family: 'GothamPro Black Italic';\n    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_blackitalic.ttf') format('truetype');\n    font-weight: 900;\n    font-style: italic;\n}\n\n#app .hud-radmir-wanted {\n    display: none;\n}\n\nbody #app .hud-radmir-info {\n    display: none;\n}\n\n.hud-hassle-map .map-mask {\n    display: none;\n}\n\n#app .vignette {\n    display: none;\n}\n\nbody #app .hud-radmir-greenzone,\n#app .hud-circle-green,\n#app .hud-round-green {\n    display: none !important;\n}\n\n#app .hud-radmir-radar__radar-border {\n    display: none;\n}\n\n#app .hud-radmir-radar__radar-border_new-year {\n    display: none;\n}\n\n#app .hud-radmir-radar__radar-border_helloween {\n    display: none;\n}\n\n#app .hud-radmir-radar__radar-bats {\n    display: none;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-logo {\n    width: auto !important;\n    height: auto !important;\n    display: flex;\n    align-items: center;\n    transform-origin: top right;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-logo img {\n    width: 20.2vh !important;\n    height: 5vh !important;\n    max-width: 20.2vh !important;\n    max-height: 5vh !important;\n    object-fit: contain !important;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-logo__bonus {\n    position: absolute !important;\n    top: auto !important;\n    bottom: -2.4vh !important;\n    right: 0.35vh !important;\n    left: auto !important;\n    margin: 0 !important;\n    width: 3vh !important;\n    height: 3vh !important;\n    z-index: 6 !important;\n}\n\n.OLD-RADMIR-hud-Container #OLD-RADMIR-ammo__in-clip {\n    font-family: 'GothamPro Black Italic', sans-serif;\n    font-weight: 900;\n    font-style: italic;\n    font-size: 2.27vh !important;\n    text-shadow: 0 0 0.46vh #00000080;\n}\n\n.OLD-RADMIR-hud-Container #OLD-RADMIR-ammo__total {\n    font-family: 'GothamPro Light Italic', sans-serif;\n    font-weight: 300;\n    font-style: italic;\n    font-size: 1.67vh !important;\n    text-shadow: 0 0 0.46vh #000000b3;\n}\n\n.OLD-RADMIR-hud-Container #OLD-RADMIR-cash__value {\n    font-family: 'GothamPro Black Italic', sans-serif;\n    font-weight: 900;\n    font-style: italic;\n    font-size: 2.59vh !important;\n    text-shadow: 0 0 0.46vh #00000080;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-cash__icon {\n    width: 2.4vh !important;\n    height: 2.4vh !important;\n    margin-right: 13px;\n    margin-top: 1px;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-param__amount {\n    font-family: 'GothamPro Light Italic', sans-serif;\n    font-weight: 300;\n    font-style: italic;\n    width: 3.24vh;\n    font-size: 1.67vh !important;\n    text-shadow: 0 0 0.46vh #000000b3;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-param__progress,\n.OLD-RADMIR-hud-Container .OLD-RADMIR-progress__value {\n    width: 9.26vh;\n    height: 0.46vh;\n    border-radius: 0.46vh;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-param__health .OLD-RADMIR-param__icon,\n.OLD-RADMIR-hud-Container .OLD-RADMIR-param__armour .OLD-RADMIR-param__icon,\n.OLD-RADMIR-hud-Container .OLD-RADMIR-param__hunger .OLD-RADMIR-param__icon {\n    width: 2vh !important;\n    height: 2vh !important;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-wanted__row>img {\n    width: 2.3vh !important;\n    height: 1.8vh !important;\n    padding: 0.19vh 0.28vh !important;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__main {\n    left: 5.8vw !important;\n    right: auto !important;\n    top: auto !important;\n    bottom: 27vh !important;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__image {\n    width: 3.6vh !important;\n    height: 4.5vh !important;\n    max-width: 3.6vh !important;\n    max-height: 4.5vh !important;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__text {\n    color: #fff;\n    text-shadow: 3px 3px 5px #00000080;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__text div:first-child {\n    font-family: 'GothamPro Black', 'GothamPro Bold', Arial, sans-serif;\n    font-size: 13px;\n    font-weight: 900;\n    text-transform: uppercase;\n}\n\n.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__text div:last-child {\n    color: hsl(0deg 0% 100% / 70%);\n    font-size: 12px;\n    font-weight: 500;\n    margin-top: 5px;\n}\n\nbody .authorization {\n    background-color: transparent;\n}\n\n#app .authorization {\n    background-image: none;\n    background-size: auto 100vh;\n}\n\n#app .modal-container-wrapper {\n    border: 0;\n    background-size: 100%;\n    transform: scale(0.84);\n}\n\n#app .modal__title {\n    letter-spacing: normal;\n    padding-bottom: 1.5vh;\n}\n\n#app .window-table__item {\n    height: 4.3vh;\n    border-radius: 0.3vh;\n    box-shadow: none;\n}\n\n.OLD-RADMIR-logo,\n.OLD-RADMIR-logo img {\n    width: 20vh !important;\n    height: 5vh !important;\n    max-width: 24vh !important;\n    max-height: 4vh !important;\n    object-fit: contain !important;\n}\n\n.OLD-RADMIR-weapon__back,\n.OLD-RADMIR-weapon__icon {\n    width: 37vh !important;\n    height: 16.6vh !important;\n    max-width: 37vh !important;\n    max-height: 16.6vh !important;\n    object-fit: contain !important;\n}\n\n.OLD-RADMIR-green-zone__image {\n    width: 4vh !important;\n    height: 4vh !important;\n    max-width: 4vh !important;\n    max-height: 4vh !important;\n    object-fit: contain !important;\n}\n.OLD-RADMIR {\n    width: 100vw;\n    height: 100vh;\n    position: relative;\n}\n\n.OLD-RADMIR-logo {\n    position: absolute;\n    display: block !important;\n    right: 4vh;\n    top: 1.66vh;\n    transform-origin: top right;\n    width: 24vh !important;\n    height: 4vh !important;\n}\n\n.OLD-RADMIR-logo img {\n    width: 24vh !important;\n    height: 4vh !important;\n    object-fit: contain !important;\n    display: block !important;\n}\n\n.OLD-RADMIR-logo__bonus {\n    background: radial-gradient(93.1% 93.1% at 126.72% 6.9%, #eb00ff 0, #eb00ff00 100%), linear-gradient(129.39deg, #f5be09 30.88%, #e9651b 98.06%);\n    width: 2.52vh;\n    height: 2.52vh;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 1.57vh;\n    color: #fff;\n    font-weight: 700;\n    position: absolute;\n    bottom: -0.46vh;\n    right: -0.19vh;\n    border-radius: 50%;\n    font-style: italic;\n    font-weight: 900;\n}\n\n.OLD-RADMIR-hud {\n    position: relative;\n    top: 2vh;\n    right: 0vh;\n}\n\n.OLD-RADMIR-weapon__back {\n    position: absolute;\n    right: 4.17vh;\n    top: 9.81vh;\n    width: 37vh !important;\n    height: 16.6vh !important;\n    object-fit: contain !important;\n}\n\n.OLD-RADMIR-weapon__icon {\n    position: absolute;\n    right: 5.74vh;\n    top: 11.2vh;\n    width: 37vh !important;\n    height: 16.6vh !important;\n    object-fit: contain !important;\n}\n\n.OLD-RADMIR-hud .OLD-RADMIR-weapon__ammo {\n    position: absolute;\n    right: 8.33vh;\n    top: 20.37vh;\n    display: flex;\n    align-items: flex-end;\n    justify-content: center;\n    color: #fff;\n    width: auto;\n    min-width: 7.41vh;\n    text-align: center;\n    white-space: nowrap;\n    pointer-events: none;\n    z-index: 1;\n}\n\n.OLD-RADMIR-weapon__ammo #OLD-RADMIR-ammo__in-clip {\n    font-family: GothamPro, 'GothamPro Black', 'GothamPro Black Italic', Arial, sans-serif;\n    font-weight: 900;\n    font-style: italic;\n    color: #fff;\n    font-size: 2.27vh;\n    margin-right: 0.55vh;\n    text-shadow: 0 0 0.46vh #00000080;\n    display: inline-block;\n}\n\n.OLD-RADMIR-weapon__ammo #OLD-RADMIR-ammo__total {\n    font-family: GothamPro, 'GothamPro Light', 'GothamPro Light Italic', Arial, sans-serif;\n    font-weight: 300;\n    font-style: italic;\n    color: #fff;\n    font-size: 1.67vh;\n    text-shadow: 0 0 0.46vh #000000b3;\n    display: inline-block;\n}\n\n.OLD-RADMIR-hud .OLD-RADMIR-hud__cash {\n    position: absolute;\n    right: 22.22vh;\n    top: 12.96vh;\n    display: inline-flex;\n    align-items: center;\n}\n\n.OLD-RADMIR-cash__icon {\n    margin-right: 1.2vh;\n    margin-top: 0.09vh;\n    width: 2.4vh;\n    height: 2.4vh;\n}\n\n.OLD-RADMIR-hud__cash #OLD-RADMIR-cash__value {\n    font-family: 'GothamPro Black Italic';\n    font-weight: 900;\n    font-style: italic;\n    color: #fff;\n    display: inline-block;\n    font-size: 2.59vh;\n    text-shadow: 0 0 0.46vh #00000080;\n    margin-top: -2.78vh;\n    margin-left: 3.43vh;\n}\n\n.OLD-RADMIR-hud .OLD-RADMIR-hud__params {\n    width: 15.74vh;\n    position: absolute;\n    top: 16.67vh;\n    right: 23.61vh;\n}\n\n.OLD-RADMIR-param__armour,\n.OLD-RADMIR-param__breath,\n.OLD-RADMIR-param__hunger {\n    margin-top: 0.51vh;\n}\n\n.OLD-RADMIR-param {\n    display: inline-flex;\n    align-items: center;\n}\n\n.OLD-RADMIR-param__icon {\n    margin-right: 1.11vh;\n    width: 1.56vh;\n    height: 1.56vh;\n    object-fit: contain;\n}\n\n.OLD-RADMIR-param__progress,\n.OLD-RADMIR-progress__value {\n    width: 9.26vh;\n    height: .46vh;\n    background-color: #0000004d;\n    border-radius: .46vh;\n}\n\n.OLD-RADMIR-progress__value {\n    border-radius: .46vh;\n}\n\n.OLD-RADMIR-param__circle {\n    position: absolute;\n    right: -.43vh;\n    top: 50%;\n    transform: translateY(-50%);\n    width: .85vh;\n    height: .93vh;\n    margin: 0;\n    object-fit: contain;\n}\n\n.OLD-RADMIR-progress__value {\n    position: relative;\n}\n\n.OLD-RADMIR-param__amount {\n    font-family: 'GothamPro Light Italic';\n    font-weight: 300;\n    font-style: italic;\n    margin-left: 0.93vh;\n    width: 3.24vh;\n    text-align: left;\n    color: #fff;\n    font-size: 1.67vh;\n    text-shadow: 0 0 0.46vh #000000b3;\n}\n\n.OLD-RADMIR-param__health .OLD-RADMIR-param__progress {\n    margin-top: -0.93vh;\n    margin-left: 2.55vh;\n}\n\n.OLD-RADMIR-param__health {\n    margin-left: 2.22vh;\n    margin-top: 0.51vh;\n}\n\n.OLD-RADMIR-param__health .OLD-RADMIR-progress__value {\n    width: 50%;\n    background-color: #ed2e2e;\n}\n\n.OLD-RADMIR-param__health .OLD-RADMIR-param__amount {\n    margin-left: 12.78vh;\n    margin-top: -1.15vh;\n}\n\n.OLD-RADMIR-param__armour .OLD-RADMIR-param__progress {\n    margin-top: -0.93vh;\n    margin-left: 2.55vh;\n}\n\n.OLD-RADMIR-param__armour {\n    margin-left: 1.39vh;\n    margin-top: 0.51vh;\n}\n\n.OLD-RADMIR-param__armour .OLD-RADMIR-param__icon {\n    margin-right: 1.3vh;\n    margin-top: 0.69vh;\n    width: 1.56vh;\n    height: 1.56vh;\n    object-fit: contain;\n}\n\n.OLD-RADMIR-param__armour .OLD-RADMIR-progress__value {\n    width: 50%;\n    background-color: #526ee6;\n}\n\n.OLD-RADMIR-param__armour .OLD-RADMIR-param__amount {\n    margin-left: 12.78vh;\n    margin-top: -1.15vh;\n}\n\n.OLD-RADMIR-param__hunger .OLD-RADMIR-param__progress {\n    margin-top: -0.93vh;\n    margin-left: 2.55vh;\n}\n\n.OLD-RADMIR-param__hunger {\n    margin-left: 0.46vh;\n    margin-top: 0.51vh;\n}\n\n.OLD-RADMIR-param__hunger .OLD-RADMIR-progress__value {\n    width: 50%;\n    background-color: #ff872e;\n}\n\n.OLD-RADMIR-param__hunger .OLD-RADMIR-param__amount {\n    margin-left: 12.78vh;\n    margin-top: -1.15vh;\n}\n\n.OLD-RADMIR-param__breath .OLD-RADMIR-param__progress {\n    margin-top: -0.93vh;\n    margin-left: 3.89vh;\n}\n\n.OLD-RADMIR-param__breath {\n    margin-left: -2.13vh;\n    margin-top: 0.51vh;\n}\n\n.OLD-RADMIR-param__breath .OLD-RADMIR-progress__value {\n    width: 99%;\n    background-color: #fff;\n    box-shadow: rgb(255 255 255 / .5) 0 0 0.46vh 0;\n}\n\n.OLD-RADMIR-param__breath .OLD-RADMIR-param__amount {\n    margin-left: 14.17vh;\n    margin-top: -1.15vh;\n}\n\n.OLD-RADMIR-hud__wanted {\n    position: absolute;\n    right: 6.48vh;\n    top: 23.15vh;\n}\n\n.OLD-RADMIR-wanted__back {\n    position: absolute;\n    right: 0;\n    top: 2.31vh;\n}\n\n.OLD-RADMIR-wanted__row {\n    display: flex;\n    flex-direction: row;\n    position: absolute;\n    right: 1.39vh;\n    top: 2.96vh;\n}\n\n.OLD-RADMIR-wanted__row>img {\n    height: 1.9vh;\n    width: 2.31vh;\n    padding: 0.19vh 0.28vh 0.19vh 0.28vh;\n}\n\n.OLD-RADMIR-hud__wanted--always-show .OLD-RADMIR-wanted__inactive {\n    opacity: .3;\n}\n\n.OLD-RADMIR-green-zone__main {\n    position: fixed;\n    right: 147vh !important;\n    top: 70vh !important;\n    display: flex;\n    align-items: center;\n}\n\n.OLD-RADMIR-green-zone__image {\n    margin-right: .96vh;\n    width: 4vh !important;\n    height: 4vh !important;\n    object-fit: contain !important;\n}\n\n.OLD-RADMIR-green-zone__text {\n    color: #fff;\n    text-shadow: 0.28vh 0.28vh 0.46vh #00000080;\n}\n\n.OLD-RADMIR-green-zone__text div:first-child {\n    font-size: 1.2vh;\n    font-weight: 900;\n    text-transform: uppercase;\n}\n\n.OLD-RADMIR-green-zone__text div:last-child {\n    color: hsl(0deg 0% 100% / 70%);\n    font-size: 1.11vh;\n    font-weight: 500;\n    margin-top: 0.46vh;\n}\n\n.OLD-RADMIR-param__freeze {\n    transform: translateY(100%);\n    position: absolute;\n    top: 96vh;\n    left: 8.8vh;\n    background: rgb(114 205 223 / .45);\n    width: 22vh;\n    height: .95vh;\n    border-radius: 1vh;\n    border: rgb(0 0 0 / .2) .2vh solid;\n    overflow: hidden;\n}\n\n.OLD-RADMIR-freeze__value {\n    height: 100%;\n    width: 0%;\n    border-radius: .3vh;\n    background: #72cddf;\n}\n\n#app .hud-radmir-radar__radar-border {\n    display: none;\n}\n\n#app .hud-radmir-radar__radar-border_new-year {\n    display: none;\n}\n\n#app .hud-radmir-radar__radar-border_helloween {\n    display: none;\n}\n\n#app .hud-radmir-radar__radar-bats {\n    display: none;\n}\n\n#app .vignette {\n    display: none;\n}\n\n#app .hud-hassle-map>img,\n#app .hud-radmir-radar__radar>img,\n#app .hud-radmir-wanted,\n#app .overlay-container,\n#app .scrollable-container_type_1 .scrollable-container__rail_y,\n#app .vignette,\n#app .window .modal__pattern-wrapper {\n    display: none;\n}\n\n#app .hud-radmir-speedometer-secondary {\n    background-image: url();\n}\n\n#app .voice-chat,\n#app .voice-chat_controls {\n    display: flex !important;\n}\n\n#app .modal-container-wrapper {\n    border: 0;\n    box-shadow: none;\n    transform: scale(0.8);\n    border-radius: 1.34vh;\n}\n\n#app .login-form__button_active {\n    border-radius: .6vh;\n}\n\n#app .login-form__button {\n    border-radius: .6vh;\n}\n\n#app .immortality-progress-bar .immortality-progress-bar_background,\n#app .immortality-progress-bar .circle-progress__svg {\n    display: none !important;\n}\n\n#app .immortality-progress-bar .immortality-progress-bar__icon {\n    left: -7vh !important;\n    bottom: -2.2vh !important;\n}",
     "hwid": "",
     "scripts": ["capture", "oldcard"]
 };;
@@ -320,10 +315,6 @@ var yorenov = {
         },
         styleElement: null,
         currentColor: null,
-        radarData: {
-            type: "\u041E\u0432\u0430\u043B\u044C\u043D\u044B\u0439",
-            color: "#F000"
-        }
     },
     createDialog: function createDialog() {
         var dialogId = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
@@ -429,124 +420,6 @@ var yorenov = {
     },
     logError: function logError(message) {
         console.log(message);
-    },
-    changeCfg: function changeCfg() {
-        try {
-            var config = JSON.stringify({
-                type: yorenov.data.radarData.type,
-                color: yorenov.data.radarData.color
-            });
-            yorenov.socket.saveConfig("Scriptloader-radar.cfg", config);
-            console.log("Config saved:", config);
-        } catch (e) {
-            console.error("Save config error:", e);
-        }
-    },
-    getCfg: function getCfg() {
-        try {
-            yorenov.socket.loadConfig("Scriptloader-radar.cfg", function(data) {
-                console.log("Raw config data:", data);
-                if (data && data !== "null" && data !== "undefined" && data !== "") {
-                    try {
-                        var parsed = JSON.parse(data);
-                        if (parsed.type) {
-                            yorenov.data.radarData.type = parsed.type;
-                            yorenov.yorenovRadar.data.type = parsed.type;
-                            if (parsed.color) {
-                                yorenov.data.radarData.color = parsed.color;
-                                yorenov.yorenovRadar.data.color = parsed.color;
-                            }
-                            console.log("Config loaded:", parsed);
-                            yorenov.yorenovRadar.applyRadar();
-                            return;
-                        }
-                    } catch (e) {
-                        console.error("Parse config error:", e);
-                    }
-                }
-                console.log("No config found, using defaults");
-                yorenov.yorenovRadar.applyRadar();
-            });
-        } catch (e) {
-            console.error("Load config error:", e);
-        }
-    },
-    logoData: {
-        width: 24,
-        height: 4
-    },
-    applyLogoSize: function applyLogoSize() {
-        try {
-            var w = yorenov.logoData.width;
-            var h = yorenov.logoData.height;
-            if (!(w > 0) || !(h > 0)) return;
-            var sx = (w / 24).toFixed(4);
-            var sy = (h / 4).toFixed(4);
-            var imgs = document.querySelectorAll(".OLD-RADMIR-logo img");
-            for (var i = 0; i < imgs.length; i++) {
-                imgs[i].style.setProperty("transform", "scale(" + sx + ", " + sy + ")", "important");
-                imgs[i].style.setProperty("transform-origin", "top right", "important");
-            }
-        } catch (e) {
-            console.error("Apply logo size error:", e);
-        }
-    },
-    waitLogoAndApply: function waitLogoAndApply() {
-        try {
-            yorenov.applyLogoSize();
-            var apply = function apply() {
-                yorenov.applyLogoSize();
-            };
-            var target = document.body || document.documentElement;
-            if (target && typeof MutationObserver === "function") {
-                var mo = new MutationObserver(apply);
-                mo.observe(target, { childList: true, subtree: true });
-            }
-            var n = 0;
-            var t = setInterval(function() {
-                n++;
-                apply();
-                if (n > 600) clearInterval(t);
-            }, 100);
-        } catch (e) {
-            console.error("watch logo error:", e);
-        }
-    },
-    changeLogoCfg: function changeLogoCfg(w, h) {
-        try {
-            yorenov.logoData.width = w;
-            yorenov.logoData.height = h;
-            yorenov.applyLogoSize();
-            var config = JSON.stringify({
-                width: w,
-                height: h
-            });
-            yorenov.socket.saveConfig("Scriptloader-logo.cfg", config);
-            console.log("Logo config saved:", config);
-        } catch (e) {
-            console.error("Save logo config error:", e);
-        }
-    },
-    getLogoCfg: function getLogoCfg() {
-        try {
-            yorenov.socket.loadConfig("Scriptloader-logo.cfg", function(data) {
-                try {
-                    if (data && data !== "null" && data !== "undefined" && data !== "") {
-                        var parsed = JSON.parse(data);
-                        if (parsed.width > 0 && parsed.height > 0) {
-                            yorenov.logoData.width = parsed.width;
-                            yorenov.logoData.height = parsed.height;
-                            console.log("Logo config loaded:", parsed);
-                        }
-                    }
-                } catch (e) {
-                    console.error("Parse logo config error:", e);
-                }
-                yorenov.applyLogoSize();
-            });
-        } catch (e) {
-            console.error("Load logo config error:", e);
-        }
     },
     addNewInterfaces: {
         data: {
@@ -751,9 +624,6 @@ var yorenov = {
             if (e == "freeze") this.data.freeze.value.style.width = a + "%";
             if ((e == "show" || e == "showBars") && +a >= 1) {
                 this.data.hudEl.style.display = "";
-                setTimeout(function() {
-                    return yorenov.yorenovRadar.applyRadar();
-                }, 10);
                 if (window.interface('Hud').info.isShowFreeze) this.data.freeze.wrapper.style.display = "";
             }
             if ((e == "show" || e == "showBars") && +a == 0) {
@@ -819,7 +689,7 @@ var yorenov = {
         },
         setStyles: function setStyles() {
             var e = "";
-            e += "";
+            e += ".OLD-RADMIR { width: 100vw; height: 100vh; position: relative; }.OLD-RADMIR-logo { position: absolute; display: block!important; right: 4vh; top: 1.66vh; transform-origin: top right; width: 24vh!important; height: 4vh!important; }.OLD-RADMIR-logo img { width: 24vh!important; height: 4vh!important; object-fit: contain!important; display:block!important; } .OLD-RADMIR-logo__bonus { background: radial-gradient(93.1% 93.1% at 126.72% 6.9%, #eb00ff 0, #eb00ff00 100%), linear-gradient(129.39deg, #f5be09 30.88%, #e9651b 98.06%); width: 2.52vh; height: 2.52vh; display: flex; align-items: center; justify-content: center; font-size: 1.57vh; color: #fff; font-weight: 700; position: absolute; bottom: -0.46vh; right: -0.19vh; border-radius: 50%; font-style: italic; font-weight: 900; } .OLD-RADMIR-hud { position: relative; top: 2vh; right: 0vh; } .OLD-RADMIR-weapon__back { position: absolute; right: 4.17vh; top: 9.81vh; width: 37vh!important; height: 16.6vh!important; object-fit: contain!important; } .OLD-RADMIR-weapon__icon { position: absolute; right: 5.74vh; top: 11.2vh; width: 37vh!important; height: 16.6vh!important; object-fit: contain!important; } .OLD-RADMIR-hud .OLD-RADMIR-weapon__ammo { position: absolute; right: 8.33vh; top: 20.37vh; display: flex; align-items: flex-end; justify-content: center; color: #fff; width: auto; min-width: 7.41vh; text-align: center; white-space: nowrap; pointer-events: none; z-index: 1; } .OLD-RADMIR-weapon__ammo #OLD-RADMIR-ammo__in-clip { font-family: GothamPro, 'GothamPro Black', 'GothamPro Black Italic', Arial, sans-serif; font-weight: 900; font-style: italic; color: #fff; font-size: 2.27vh; margin-right: 0.55vh; text-shadow: 0 0 0.46vh #00000080; display: inline-block; } .OLD-RADMIR-weapon__ammo #OLD-RADMIR-ammo__total { font-family: GothamPro, 'GothamPro Light', 'GothamPro Light Italic', Arial, sans-serif; font-weight: 300; font-style: italic; color: #fff; font-size: 1.67vh; text-shadow: 0 0 0.46vh #000000b3; display: inline-block; } .OLD-RADMIR-hud .OLD-RADMIR-hud__cash { position: absolute; right: 22.22vh; top: 12.96vh; display: inline-flex; align-items: center; } .OLD-RADMIR-cash__icon { margin-right: 1.2vh; margin-top: 0.09vh; width: 2.4vh; height: 2.4vh; } .OLD-RADMIR-hud__cash #OLD-RADMIR-cash__value { font-family: 'GothamPro Black Italic'; font-weight: 900; font-style: italic; color: #fff; display: inline-block; font-size: 2.59vh; text-shadow: 0 0 0.46vh #00000080; margin-top: -2.78vh; margin-left: 3.43vh; } .OLD-RADMIR-hud .OLD-RADMIR-hud__params { width: 15.74vh; position: absolute; top: 16.67vh; right: 23.61vh; } .OLD-RADMIR-param__armour, .OLD-RADMIR-param__breath, .OLD-RADMIR-param__hunger { margin-top: 0.93vh; } .OLD-RADMIR-param { display: inline-flex; align-items: center; } .OLD-RADMIR-param__icon { margin-right: 1.11vh; width: 1.56vh; height: 1.56vh; object-fit: contain; } .OLD-RADMIR-param__progress, .OLD-RADMIR-progress__value { width: 9.26vh; height: .46vh; background-color: #0000004d; border-radius: .46vh; } .OLD-RADMIR-progress__value { border-radius: .46vh; } .OLD-RADMIR-param__circle { position: absolute; right: -.43vh; top: 50%; transform: translateY(-50%); width: .85vh; height: .93vh; margin: 0; object-fit: contain; } .OLD-RADMIR-progress__value { position: relative; } .OLD-RADMIR-param__amount { font-family: 'GothamPro Light Italic'; font-weight: 300; font-style: italic; margin-left: 0.93vh; width: 3.24vh; text-align: left; color: #fff; font-size: 1.67vh; text-shadow: 0 0 0.46vh #000000b3; } .OLD-RADMIR-param__health .OLD-RADMIR-param__progress { margin-top: -0.93vh; margin-left: 2.55vh; } .OLD-RADMIR-param__health { margin-left: 2.22vh; margin-top: 0.25vh; } .OLD-RADMIR-param__health .OLD-RADMIR-progress__value { width: 50%; background-color: #ed2e2e; } .OLD-RADMIR-param__health .OLD-RADMIR-param__amount { margin-left: 12.78vh; margin-top: -1.15vh; } .OLD-RADMIR-param__armour .OLD-RADMIR-param__progress { margin-top: -0.93vh; margin-left: 2.55vh; } .OLD-RADMIR-param__armour { margin-left: 1.39vh; margin-top: 0.51vh; } .OLD-RADMIR-param__armour .OLD-RADMIR-param__icon { margin-right: 1.3vh; margin-top: 0.69vh; width: 1.56vh; height: 1.56vh; object-fit: contain; } .OLD-RADMIR-param__armour .OLD-RADMIR-progress__value { width: 50%; background-color: #526ee6; } .OLD-RADMIR-param__armour .OLD-RADMIR-param__amount { margin-left: 12.78vh; margin-top: -1.15vh; } .OLD-RADMIR-param__hunger .OLD-RADMIR-param__progress { margin-top: -1.06vh; margin-left: 2.55vh; } .OLD-RADMIR-param__hunger { margin-left: 0.46vh; margin-top: 0.51vh; } .OLD-RADMIR-param__hunger .OLD-RADMIR-progress__value { width: 50%; background-color: #ff872e; } .OLD-RADMIR-param__hunger .OLD-RADMIR-param__amount { margin-left: 12.78vh; margin-top: -1.21vh; } .OLD-RADMIR-param__breath .OLD-RADMIR-param__progress { margin-top: -1.94vh; margin-left: 3.89vh; } .OLD-RADMIR-param__breath { margin-left: -2.13vh; margin-top: 2.04vh; } .OLD-RADMIR-param__breath .OLD-RADMIR-progress__value { width: 99%; background-color: #fff; box-shadow: rgb(255 255 255 / .5) 0 0 0.46vh 0; } .OLD-RADMIR-param__breath .OLD-RADMIR-param__amount { margin-left: 14.17vh; margin-top: -1.21vh; } .OLD-RADMIR-hud__wanted { position: absolute; right: 6.48vh; top: 23.15vh; } .OLD-RADMIR-wanted__back { position: absolute; right: 0; top: 2.31vh; } .OLD-RADMIR-wanted__row { display: flex; flex-direction: row; position: absolute; right: 1.39vh; top: 2.96vh; } .OLD-RADMIR-wanted__row>img { height: 1.9vh; width: 2.31vh; padding: 0.19vh 0.28vh 0.19vh 0.28vh; } .OLD-RADMIR-hud__wanted--always-show .OLD-RADMIR-wanted__inactive { opacity: .3; } .OLD-RADMIR-green-zone__main { position: fixed; right: 147vh!important; top: 70vh!important; display: flex; align-items: center; } .OLD-RADMIR-green-zone__image { margin-right: .96vh; width: 4vh!important; height: 4vh!important; object-fit: contain!important; } .OLD-RADMIR-green-zone__text { color: #fff; text-shadow: 0.28vh 0.28vh 0.46vh #00000080; } .OLD-RADMIR-green-zone__text div:first-child { font-size: 1.2vh; font-weight: 900; text-transform: uppercase; } .OLD-RADMIR-green-zone__text div:last-child { color: hsl(0deg 0% 100% / 70%); font-size: 1.11vh; font-weight: 500; margin-top: 0.46vh; } .OLD-RADMIR-param__freeze { transform: translateY(100%); position: absolute; top: 96vh; left: 8.8vh; background: rgb(114 205 223 / .45); width: 22vh; height: .95vh; border-radius: 1vh; border: rgb(0 0 0 / .2) .2vh solid; overflow: hidden; } .OLD-RADMIR-freeze__value { height: 100%; width: 0%; border-radius: .3vh; background: #72cddf; } #app .hud-radmir-radar__radar-border { display: none; } #app .hud-radmir-radar__radar-border_new-year { display: none; } #app .hud-radmir-radar__radar-border_helloween { display: none; } #app .hud-radmir-radar__radar-bats { display: none; } #app .vignette { display: none; } #app .hud-hassle-map>img, #app .hud-radmir-radar__radar>img, #app .hud-radmir-wanted, #app .overlay-container, #app .scrollable-container_type_1 .scrollable-container__rail_y, #app .vignette, #app .window .modal__pattern-wrapper { display: none; } #app .hud-radmir-speedometer-secondary { background-image: url(); } #app .voice-chat, #app .voice-chat_controls { display: flex !important; } #app .modal-container-wrapper { border: 0; box-shadow: none; transform: scale(0.8); border-radius: 1.34vh; } #app .login-form__button_active { border-radius: .6vh; } #app .login-form__button { border-radius: .6vh; } #app .immortality-progress-bar .immortality-progress-bar_background, #app .immortality-progress-bar .circle-progress__svg { display: none!important; } #app .immortality-progress-bar .immortality-progress-bar__icon { left: -7vh!important; bottom: -2.2vh!important; }";
             e += "@font-face{font-family:'GothamPro Light';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/main/gothampro_light.ttf') format('truetype');font-weight:300;font-style:normal}";
             e += "@font-face{font-family:'GothamPro Light Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/main/gothampro_lightitalic.ttf') format('truetype');font-weight:300;font-style:italic}";
             e += "@font-face{font-family:'GothamPro Regular';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/main/gothampro.ttf') format('truetype');font-weight:400;font-style:normal}";
@@ -839,21 +709,10 @@ var yorenov = {
                     e += "#app .hud-radmir-speedometer-main__speed {background-image: url(" + window.yorenovNewHudAssets.speedometer.main + ");}";
                 }
             }
-            if (window.yorenovNewHudAssets.capture !== undefined) {
-                if (window.yorenovNewHudAssets.capture.my && window.yorenovNewHudAssets.capture.my.length) {
-                    e += "#app .capture-table__col-kills.my {background-image: url(" + window.yorenovNewHudAssets.capture.my + ");}";
-                }
-                if (window.yorenovNewHudAssets.capture.enemyies && window.yorenovNewHudAssets.capture.enemyies.length) {
-                    e += "#app .capture-table__col-kills {background-image: url(" + window.yorenovNewHudAssets.capture.enemyies + ");}";
-                }
-                if (window.yorenovNewHudAssets.capture.timer && window.yorenovNewHudAssets.capture.timer.length) {
-                    e += "#app .capture-table__timer {background-image: url(" + window.yorenovNewHudAssets.capture.timer + ");}";
-                }
-            }
             if (window.yorenovNewHudAssets.style && window.yorenovNewHudAssets.style.length) {
                 e += window.yorenovNewHudAssets.style;
             }
-            e += "";
+            e += ".OLD-RADMIR-logo,.OLD-RADMIR-logo img{width:20vh!important;height:5vh!important;max-width:24vh!important;max-height:4vh!important;object-fit:contain!important;}.OLD-RADMIR-weapon__back,.OLD-RADMIR-weapon__icon{width:37vh!important;height:16.6vh!important;max-width:37vh!important;max-height:16.6vh!important;object-fit:contain!important;}.OLD-RADMIR-green-zone__image{width:4vh!important;height:4vh!important;max-width:4vh!important;max-height:4vh!important;object-fit:contain!important;}";
             if (e.length) {
                 this.setNewStyles(e);
             }
@@ -925,174 +784,12 @@ var yorenov = {
             }, 2500, "YORENOV MODS HUD");
         }
     },
-    yorenovRadar: {
-        data: {
-            type: "\u041E\u0432\u0430\u043B\u044C\u043D\u044B\u0439",
-            color: "#F000"
-        },
-        showRadarTypeDialog: function showRadarTypeDialog() {
-            var radarOptions = ["\u041A\u0440\u0443\u0433\u043B\u044B\u0439", "\u041A\u0432\u0430\u0434\u0440\u0430\u0442\u043D\u044B\u0439", "\u041F\u0440\u044F\u043C\u043E\u0443\u0433\u043E\u043B\u044C\u043D\u044B\u0439", "\u041E\u0432\u0430\u043B\u044C\u043D\u044B\u0439", "\u0426\u0432\u0435\u0442"];
-            var optionsString = radarOptions.join("<n>");
-            yorenov.createDialog(2, "Scriptloader radar", "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u0442\u0438\u043F \u0440\u0430\u0434\u0430\u0440\u0430:", "\u0412\u044B\u0431\u0440\u0430\u0442\u044C", "\u0417\u0430\u043A\u0440\u044B\u0442\u044C", optionsString, function(selected) {
-                try {
-                    var cleanSelection = selected;
-                    if (typeof selected === "string") {
-                        cleanSelection = selected.replace(/<[^>]*>/g, "").trim();
-                    }
-                    if (radarOptions.includes(cleanSelection)) {
-                        yorenov.logError("\u0412\u044B\u0431\u0440\u0430\u043D \u0442\u0438\u043F \u0440\u0430\u0434\u0430\u0440\u0430: " + cleanSelection);
-                        if (cleanSelection === "\u0426\u0432\u0435\u0442") {
-                            setTimeout(function() {
-                                yorenov.yorenovRadar.showRadarColorDialog();
-                            }, 400);
-                        } else {
-                            yorenov.yorenovRadar.data.type = cleanSelection;
-                            yorenov.yorenovRadar.changeRadar(cleanSelection, yorenov.yorenovRadar.data.color);
-                            yorenovPickNote(cleanSelection);
-                        }
-                    } else {
-                        yorenov.logError("\u041D\u0435\u0432\u0435\u0440\u043D\u044B\u0439 \u0432\u044B\u0431\u043E\u0440");
-                    }
-                } catch (error) {
-                    yorenov.logError("\u041E\u0448\u0438\u0431\u043A\u0430 \u043F\u0440\u0438 \u0432\u044B\u0431\u043E\u0440\u0435 \u0440\u0430\u0434\u0430\u0440\u0430: " + error);
-                }
-            }, function() {
-                yorenov.logError("\u0412\u044B\u0431\u043E\u0440 \u0440\u0430\u0434\u0430\u0440\u0430 \u043E\u0442\u043C\u0435\u043D\u0435\u043D");
-            });
-        },
-        showRadarColorDialog: function showRadarColorDialog() {
-            yorenov.createDialog(1, "Scriptloader radar color", "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0446\u0432\u0435\u0442 \u0440\u0430\u0434\u0430\u0440\u0430 (\u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, #FF0000 \u0438\u043B\u0438 #F000):", "\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C", "\u0417\u0430\u043A\u0440\u044B\u0442\u044C", "", function(inputColor) {
-                try {
-                    var cleanColor = inputColor.trim();
-                    if (cleanColor) {
-                        if (cleanColor[0] !== "#") {
-                            cleanColor = "#" + cleanColor;
-                        }
-                        yorenov.logError("\u0412\u044B\u0431\u0440\u0430\u043D \u0446\u0432\u0435\u0442 \u0440\u0430\u0434\u0430\u0440\u0430: " + cleanColor);
-                        yorenov.yorenovRadar.data.color = cleanColor;
-                        yorenov.yorenovRadar.changeRadar(yorenov.yorenovRadar.data.type, cleanColor);
-                        yorenovPickNote(cleanColor);
-                    } else {
-                        yorenov.logError("\u0426\u0432\u0435\u0442 \u043D\u0435 \u0432\u0432\u0435\u0434\u0435\u043D");
-                    }
-                } catch (error) {
-                    yorenov.logError("\u041E\u0448\u0438\u0431\u043A\u0430 \u043F\u0440\u0438 \u0432\u044B\u0431\u043E\u0440\u0435 \u0446\u0432\u0435\u0442\u0430: " + error);
-                }
-            }, function() {
-                yorenov.logError("\u0412\u044B\u0431\u043E\u0440 \u0446\u0432\u0435\u0442\u0430 \u043E\u0442\u043C\u0435\u043D\u0435\u043D");
-            });
-        },
-        applyRadar: function applyRadar() {
-            var finalType = yorenov.yorenovRadar.data.type || "\u041E\u0432\u0430\u043B\u044C\u043D\u044B\u0439";
-            var finalColor = yorenov.yorenovRadar.data.color || "#F000";
-            yorenov.logError("(debug) Applying radar: type=" + finalType + ", color=" + finalColor);
-            var radarElement = document.querySelector(".hud-radmir-radar");
-            if (!radarElement) {
-                yorenov.logError("(error) Radar element not found");
-                return;
-            }
-            radarElement.classList.remove("radar-round", "radar-rectangular", "radar-square", "radar-oval");
-            var radarClass = "";
-            if (finalType === "\u041A\u0440\u0443\u0433\u043B\u044B\u0439") {
-                radarClass = "radar-round";
-            } else if (finalType === "\u041F\u0440\u044F\u043C\u043E\u0443\u0433\u043E\u043B\u044C\u043D\u044B\u0439") {
-                radarClass = "radar-rectangular";
-            } else if (finalType === "\u041A\u0432\u0430\u0434\u0440\u0430\u0442\u043D\u044B\u0439") {
-                radarClass = "radar-square";
-            } else {
-                radarClass = "radar-oval";
-            }
-            radarElement.classList.add(radarClass);
-            var styles = "\n                body #app .hud-radmir-radar__map { transition: .3s; border: none !important; }\n                .radar-round .hud-radmir-radar__map { border-radius: 100%; }\n                .radar-oval .hud-hassle-map, .radar-rectangular .hud-hassle-map, .radar-square .hud-hassle-map {\n                    width: 32vh !important;\n                    height: 32vh !important;\n                }\n                .radar-rectangular .hud-radmir-radar__radar, .radar-square .hud-radmir-radar__radar {\n                    width: 26.3vh;\n                    border-radius: 2vh;\n                }\n                .radar-rectangular .hud-radmir-radar__map {\n                    width: 26.3vh !important;\n                    height: 16.9vh !important;\n                    overflow: hidden;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    border-radius: 2vh;\n                }\n                .radar-rectangular .hud-radmir-radar {\n                    left: 7.3vh;\n                    bottom: 4.03vh;\n                }\n                .radar-square .hud-radmir-radar {\n                    left: 7.2vh;\n                }\n                .radar-square .hud-radmir-radar__map {\n                    width: 21.9vh !important;\n                    height: 20.9vh !important;\n                    overflow: hidden;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    border-radius: 2vh;\n                }\n                .radar-oval .hud-radmir-radar__radar {\n                    width: 26.3vh;\n                }\n                .radar-oval .hud-radmir-radar__map {\n                    width: 27.1vh !important;\n                    height: 18.2vh !important;\n                    overflow: hidden;\n                    display: flex;\n                    justify-content: center;\n                    align-items: center;\n                    border-radius: 100%;\n                }\n                .radar-oval .hud-radmir-radar {\n                    left: 7.3vh;\n                    bottom: 4.03vh;\n                }\n                .radar-round .hud-radmir-radar {\n                    bottom: -1.03vh!important;\n                }\n                body #app .hud-radmir-radar__map { border: 0.65vh solid ".concat(finalColor, " !important; }\n            ");
-            yorenov.createStyles(styles);
-            yorenov.logError("(info) Radar applied");
-        },
-        changeRadar: function changeRadar(selectedRadar, radarColor) {
-            yorenov.logError("(debug) Changing radar: " + selectedRadar + ", " + radarColor);
-            var finalType = selectedRadar || "\u041E\u0432\u0430\u043B\u044C\u043D\u044B\u0439";
-            var finalColor = radarColor || "#F000";
-            yorenov.yorenovRadar.data.type = finalType;
-            yorenov.yorenovRadar.data.color = finalColor;
-            yorenov.data.radarData.type = finalType;
-            yorenov.data.radarData.color = finalColor;
-            yorenov.yorenovRadar.applyRadar();
-            yorenov.changeCfg();
-            yorenov.logError("(info) Radar changed and saved");
-        },
-        init: function init() {
-            yorenov.logError("(debug) Initializing yorenovRadar...");
-            try {
-                yorenov.registerCommand("/radar", function() {
-                    yorenov.yorenovRadar.showRadarTypeDialog();
-                    return 0;
-                });
-                yorenov.registerCommand("/radarcolor", function() {
-                    yorenov.yorenovRadar.showRadarColorDialog();
-                    return 0;
-                });
-                yorenov.executeFunctionWhen(function() {
-                    yorenov.logError("(debug) Loading config...");
-                    yorenov.getCfg();
-                }, function() {
-                    return document.querySelector('.hud-radmir-radar') !== null;
-                }, "radar init");
-                yorenov.logError("(info) Radar initialized");
-            } catch (error) {
-                yorenov.logError("(error) " + error);
-            }
-        }
-    },
-    yorenovLogo: {
-        showSizeDialog: function showSizeDialog() {
-            yorenov.createDialog(1, "Scriptloader logo", "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0440\u0430\u0437\u043C\u0435\u0440 \u043B\u043E\u0433\u043E (\u0448\u0438\u0440\u0438\u043D\u0430 \u0432\u044B\u0441\u043E\u0442\u0430, \u043D\u0430\u043F\u0440. 30 5):", "\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C", "\u0417\u0430\u043A\u0440\u044B\u0442\u044C", "", function(input) {
-                try {
-                    var parts = String(input || "").trim().split(/\s+/);
-                    var w = parseFloat(parts[0]);
-                    var h = parseFloat(parts[1]);
-                    if (!(w > 0) || !(h > 0) || w > 100 || h > 100) {
-                        yorenov.logError("\u041D\u0435\u0432\u0435\u0440\u043D\u044B\u0439 \u0440\u0430\u0437\u043C\u0435\u0440 \u043B\u043E\u0433\u043E");
-                        return;
-                    }
-                    yorenov.changeLogoCfg(w, h);
-                    yorenov.waitLogoAndApply();
-                    yorenovPickNote("Logo: " + w + " x " + h + " vh");
-                } catch (error) {
-                    yorenov.logError("Logo error: " + error);
-                }
-            }, function() {
-                yorenov.logError("\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0435 \u043B\u043E\u0433\u043E \u043E\u0442\u043C\u0435\u043D\u0435\u043D\u043E");
-            });
-        },
-        init: function init() {
-            yorenov.logError("(debug) Initializing yorenovLogo...");
-            try {
-                yorenov.registerCommand("/logo", function() {
-                    yorenov.yorenovLogo.showSizeDialog();
-                    return 0;
-                });
-                yorenov.registerCommand("/logosize", function(args) {
-                    var w = parseFloat(args && args[0]);
-                    var h = parseFloat(args && args[1]);
-                    if (!(w > 0) || !(h > 0) || w > 100 || h > 100) return 0;
-                    yorenov.changeLogoCfg(w, h);
-                    yorenov.waitLogoAndApply();
-                    yorenovPickNote("Logo: " + w + " x " + h + " vh");
-                    return 0;
-                });
-                yorenov.getLogoCfg();
-                yorenov.waitLogoAndApply();
-                yorenov.logError("(info) Logo initialized");
-            } catch (error) {
-                yorenov.logError("(error) " + error);
-            }
-        }
-    },
     captureMod: {
         data: {
             isInitialized: false,
             customElement: null,
             updateInterval: null,
-            selectedType: "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E"
+            selectedType: "\u0421\u0435\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E"
         },
         hookCapture: function hookCapture() {
             var self = this;
@@ -1109,7 +806,7 @@ var yorenov = {
                 document.querySelectorAll('.capture').forEach(function(el) {
                     if (el.id !== 'old-capture') el.style.display = 'none';
                 });
-                this.applyStyles(this.data.selectedType || "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E");
+                this.applyStyles(this.data.selectedType);
                 return true;
             }
             if (this.data.customElement) {
@@ -1123,14 +820,6 @@ var yorenov = {
             var rightName = this.getRightName() || "Team 2";
             var rightKills = this.getRightKills() || "0";
             var timer = this.getTimer() || "00:00";
-            var myImg = '';
-            var enemyImg = '';
-            var timerImg = '';
-            if (window.yorenovNewHudAssets && window.yorenovNewHudAssets.capture) {
-                myImg = window.yorenovNewHudAssets.capture.my || '';
-                enemyImg = window.yorenovNewHudAssets.capture.enemyies || '';
-                timerImg = window.yorenovNewHudAssets.capture.timer || '';
-            }
             var customCapture = document.createElement('div');
             customCapture.id = 'old-capture';
             customCapture.className = 'capture old-capture';
@@ -1141,9 +830,6 @@ var yorenov = {
             var leftKillsEl = document.createElement('div');
             leftKillsEl.className = 'capture-table__col-kills my';
             leftKillsEl.textContent = leftKills;
-            if (myImg) {
-                leftKillsEl.style.backgroundImage = 'url(' + myImg + ')';
-            }
             var leftNameEl = document.createElement('div');
             leftNameEl.className = 'name';
             leftNameEl.textContent = leftName;
@@ -1152,9 +838,6 @@ var yorenov = {
             var timerEl = document.createElement('div');
             timerEl.className = 'capture-table__timer';
             timerEl.textContent = timer;
-            if (timerImg) {
-                timerEl.style.backgroundImage = 'url(' + timerImg + ')';
-            }
             var rightCol = document.createElement('div');
             rightCol.className = 'capture-table__col';
             var rightNameEl = document.createElement('div');
@@ -1163,9 +846,6 @@ var yorenov = {
             var rightKillsEl = document.createElement('div');
             rightKillsEl.className = 'capture-table__col-kills';
             rightKillsEl.textContent = rightKills;
-            if (enemyImg) {
-                rightKillsEl.style.backgroundImage = 'url(' + enemyImg + ')';
-            }
             rightCol.appendChild(rightNameEl);
             rightCol.appendChild(rightKillsEl);
             table.appendChild(leftCol);
@@ -1179,7 +859,7 @@ var yorenov = {
             });
             this.data.customElement = customCapture;
             this.data.isInitialized = true;
-            this.applyStyles(this.data.selectedType || "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E");
+            this.applyStyles(this.data.selectedType);
             this.startUpdate();
             console.log('(capture) Capture hooked');
             return true;
@@ -1254,11 +934,6 @@ var yorenov = {
                     if (originalCapture) {
                         self.data.isInitialized = false;
                         self.hookCapture();
-                        if (self.data.selectedType) {
-                            setTimeout(function() {
-                                self.applyStyles(self.data.selectedType);
-                            }, 50);
-                        }
                     }
                     return;
                 }
@@ -1289,13 +964,7 @@ var yorenov = {
             var el = this.data.customElement || document.getElementById('old-capture');
             if (!el) return;
             el.classList.remove('old-capture', 'old-capture-radar', 'old-capture-seroe');
-            if (type === "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E") {
-                el.classList.add('old-capture');
-            } else if (type === "\u0421\u0442\u0430\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E \u043D\u0430\u0434 \u0440\u0430\u0434\u0430\u0440\u043E\u043C") {
-                el.classList.add('old-capture-radar');
-            } else if (type === "\u0421\u0435\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E") {
-                el.classList.add('old-capture-seroe');
-            }
+            el.classList.add('old-capture-seroe');
             this.data.customElement = el;
         },
         applyStyles: function applyStyles(type) {
@@ -1313,42 +982,9 @@ var yorenov = {
             if (styleElement) styleElement.remove();
             var extraStyles = document.createElement('style');
             extraStyles.id = 'capture-type-styles';
-            var styles = '';
-            if (type === "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E") {
-                styles = '.old-capture .capture-table {background:linear-gradient(90deg,#00000000 9.52%,#00000000 52.29%,#00000000 95.95%);border-radius:0.46vh;bottom:6vh;padding:1.85vh;display:flex;align-items:center;justify-content:center;left:50%;transform:translateX(-50%);min-width:60vh;position:absolute;}' + '.old-capture .capture-table__col {display:flex;align-items:center;flex-direction:row;}' + '.old-capture .capture-table__col:first-child {justify-content:flex-end;margin-right:0.5vh;}' + '.old-capture .capture-table__col:last-child {justify-content:flex-start;margin-left:0.5vh;}' + '.old-capture .capture-table__col .name {color:#fff;font-size:2.41vh;font-style:italic;font-weight:700;text-transform:uppercase;font-family:"Open Sans","Arial",sans-serif;text-shadow:0 0 10px rgba(0,0,0,0.5);white-space:nowrap;}' + '.old-capture .capture-table__col-kills {align-items:center;background-size:cover;background-repeat:no-repeat;color:#fff;display:flex;font-size:1.67vh;font-style:italic;font-weight:700;height:3.24vh;justify-content:center;margin:0 0.74vh;transform-origin:right bottom;width:3.24vh;font-family:"Open Sans","Arial",sans-serif;flex-shrink:0;}' + '.old-capture .capture-table__timer {align-items:center;background-size:cover;background-repeat:no-repeat;color:#fff;display:flex;font-size:1.67vh;font-style:italic;font-weight:700;height:3.52vh;justify-content:center;margin:0 2.41vh;width:7.78vh;font-family:"Open Sans","Arial",sans-serif;flex-shrink:0;}';
-            } else if (type === "\u0421\u0442\u0430\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E \u043D\u0430\u0434 \u0440\u0430\u0434\u0430\u0440\u043E\u043C") {
-                styles = '.old-capture-radar .capture-table {flex-direction:column;min-width:35vh !important;background:rgba(0,0,0,.8) !important;padding:1.5vh 2vh !important;padding-top:3.6vh !important;border-radius:.46vh !important;box-shadow:none !important;align-items:flex-start !important;left:2.5vh;bottom:28vh;position:absolute;}' + '.old-capture-radar .capture-table__col {width:100% !important;min-width:100% !important;max-width:100% !important;height:3vh;flex-basis:100% !important;justify-content:flex-start !important;flex-direction:row !important;display:flex !important;align-items:center !important;}' + '.old-capture-radar .capture-table__col .name {order:1 !important;font-style:normal;font-size:2vh;color:#fff;font-family:"Open Sans",sans-serif !important;font-weight:700 !important;background:0 0 !important;padding:0 !important;width:auto !important;height:auto !important;}' + '.old-capture-radar .capture-table__col-kills {order:2 !important;color:#b8303a !important;font-size:2.5vh !important;font-style:normal;font-family:"Open Sans",sans-serif !important;font-weight:700 !important;background:0 0 !important;padding:0 !important;width:auto !important;height:auto !important;margin:0 !important;margin-left:1.5vh !important;}' + '.old-capture-radar .capture-table__col-kills.my {order:2 !important;margin:0 !important;color:#b8303a !important;font-size:2.5vh !important;font-style:normal;font-family:"Open Sans",sans-serif !important;font-weight:700 !important;background:0 0 !important;padding:0 !important;width:auto !important;height:auto !important;margin-left:1.5vh !important;}' + '.old-capture-radar .capture-table__timer {color:#26a62b !important;font-style:normal;font-size:2.5vh !important;position:absolute;top:.5vh;left:2vh;font-family:"Open Sans",sans-serif !important;font-weight:700 !important;background:0 0 !important;padding:0 !important;width:auto !important;height:auto !important;}';
-            } else if (type === "\u0421\u0435\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E") {
-                styles = '.old-capture-seroe .capture-table {background:#00000061;box-shadow:0 0 5vh 0 #00000044;border-radius:1vh;transform:scale(.9);padding:1.5vh 1.8vh;bottom:6vh;display:flex;align-items:center;justify-content:center;left:50%;transform:translateX(-50%) scale(.9);min-width:60vh;position:absolute;}' + '.old-capture-seroe .capture-table__col {display:flex;align-items:center;flex-direction:row;}' + '.old-capture-seroe .capture-table__col:first-child {justify-content:flex-end;margin-right:2.5vh;}' + '.old-capture-seroe .capture-table__col:last-child {justify-content:flex-start;margin-left:2.5vh;}' + '.old-capture-seroe .capture-table__col .name {color:#fff;font-size:2.41vh;font-family:"GothamPro Bold";font-style:normal;font-weight:700;text-transform:none;text-shadow:0 0 10px rgba(0,0,0,0.5);white-space:nowrap;}' + '.old-capture-seroe .capture-table__col-kills {color:#fff;font-style:normal;font-weight:900;font-size:1.8vh;font-family:"GothamPro Bold";align-items:center;display:flex;height:3.24vh;justify-content:center;margin:0 0.74vh;transform-origin:right bottom;width:auto;min-width:3.24vh;background:none !important;background-image:none !important;flex-shrink:0;}' + '.old-capture-seroe .capture-table__col-kills.small {font-size:1.3vh;}' + '.old-capture-seroe .capture-table__col-kills.my {margin-right:1.3vh;margin-left:0!important;background:none !important;background-image:none !important;}' + '.old-capture-seroe .capture-table__col-kills {margin-left:1.3vh;background:none !important;background-image:none !important;}' + '.old-capture-seroe .capture-table__timer {background:#272727;color:#fff;font-style:normal;font-weight:900;font-size:1.8vh;font-family:"GothamPro Bold";border-radius:.5vh;align-items:center;display:flex;height:3.52vh;justify-content:center;padding:0 1.5vh;min-width:7.78vh;background-image:none !important;flex-shrink:0;}';
-            }
-            extraStyles.textContent = styles;
+            extraStyles.textContent = '.old-capture-seroe .capture-table {background:#00000061;box-shadow:0 0 5vh 0 #00000044;border-radius:1vh;transform:scale(.9);padding:1.5vh 1.8vh;bottom:6vh;display:flex;align-items:center;justify-content:center;left:50%;transform:translateX(-50%) scale(.9);min-width:60vh;position:absolute;}' + '.old-capture-seroe .capture-table__col {display:flex;align-items:center;flex-direction:row;}' + '.old-capture-seroe .capture-table__col:first-child {justify-content:flex-end;margin-right:2.5vh;}' + '.old-capture-seroe .capture-table__col:last-child {justify-content:flex-start;margin-left:2.5vh;}' + '.old-capture-seroe .capture-table__col .name {color:#fff;font-size:2.41vh;font-family:"GothamPro Bold";font-style:normal;font-weight:700;text-transform:none;text-shadow:0 0 10px rgba(0,0,0,0.5);white-space:nowrap;}' + '.old-capture-seroe .capture-table__col-kills {color:#fff;font-style:normal;font-weight:900;font-size:1.8vh;font-family:"GothamPro Bold";align-items:center;display:flex;height:3.24vh;justify-content:center;margin:0 0.74vh;transform-origin:right bottom;width:auto;min-width:3.24vh;background:none !important;background-image:none !important;flex-shrink:0;}' + '.old-capture-seroe .capture-table__col-kills.small {font-size:1.3vh;}' + '.old-capture-seroe .capture-table__col-kills.my {margin-right:1.3vh;margin-left:0!important;background:none !important;background-image:none !important;}' + '.old-capture-seroe .capture-table__col-kills {margin-left:1.3vh;background:none !important;background-image:none !important;}' + '.old-capture-seroe .capture-table__timer {background:#272727;color:#fff;font-style:normal;font-weight:900;font-size:1.8vh;font-family:"GothamPro Bold";border-radius:.5vh;align-items:center;display:flex;height:3.52vh;justify-content:center;padding:0 1.5vh;min-width:7.78vh;background-image:none !important;flex-shrink:0;}';
             document.head.appendChild(extraStyles);
             console.log('[CAPTURE] Style applied: ' + type);
-        },
-        showCaptureDialog: function showCaptureDialog() {
-            var self = this;
-            var captureOptions = ["\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E", "\u0421\u0442\u0430\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E \u043D\u0430\u0434 \u0440\u0430\u0434\u0430\u0440\u043E\u043C", "\u0421\u0435\u0440\u043E\u0435 \u0442\u0430\u0431\u043B\u043E"];
-            var optionsString = captureOptions.join("<n>");
-            yorenov.createDialog(2, "Scriptloader CAPTURE", "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u0441\u0442\u0438\u043B\u044C \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F capture:", "\u0412\u044B\u0431\u0440\u0430\u0442\u044C", "\u0417\u0430\u043A\u0440\u044B\u0442\u044C", optionsString, function(selected) {
-                try {
-                    var cleanSelection = selected.replace(/<[^>]*>/g, "").trim();
-                    if (captureOptions.includes(cleanSelection)) {
-                        self.data.selectedType = cleanSelection;
-                        self.injectBaseStyles();
-                        if (!document.getElementById('old-capture')) {
-                            self.hookCapture();
-                        }
-                        self.applyStyles(cleanSelection);
-                        yorenovPickNote(cleanSelection);
-                        yorenov.socket.saveConfig("hudloader_capture.json", JSON.stringify({
-                            captureType: cleanSelection
-                        }));
-                        console.log('[CAPTURE]               : ' + cleanSelection);
-                    }
-                } catch (e) {
-                    console.log('[CAPTURE]       : ' + e);
-                }
-            }, function() {});
         },
         init: function init() {
             if (typeof isModuleEnabled === 'function' && !isModuleEnabled("capture")) {
@@ -1356,46 +992,8 @@ var yorenov = {
                 return;
             }
             var self = this;
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "http://localhost:3874/load_config?file=hudloader_capture.json", true);
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === XMLHttpRequest.DONE) {
-                    if (xhr.status === 200) {
-                        try {
-                            var data = xhr.responseText;
-                            if (data && data !== "null" && data !== "undefined") {
-                                var parsed = JSON.parse(data);
-                                if (parsed.captureType) {
-                                    self.data.selectedType = parsed.captureType;
-                                    console.log('[CAPTURE] loaded: ' + parsed.captureType);
-                                    var paint = function() {
-                                        if (document.getElementById('old-capture')) self.applyStyles(parsed.captureType);
-                                    };
-                                    paint();
-                                    setTimeout(paint, 400);
-                                    setTimeout(paint, 1500);
-                                }
-                            }
-                        } catch (e) {
-                            console.log('[CAPTURE]                : ' + e);
-                        }
-                    }
-                }
-            };
-            xhr.send();
-            yorenov.registerCommand("/capture", function() {
-                self.showCaptureDialog();
-                return 0;
-            });
             setTimeout(function() {
-                if (!self.data.isInitialized) {
-                    self.hookCapture();
-                    if (self.data.selectedType && self.data.selectedType !== "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E") {
-                        setTimeout(function() {
-                            self.applyStyles(self.data.selectedType);
-                        }, 100);
-                    }
-                }
+                if (!self.data.isInitialized) self.hookCapture();
             }, 100);
             setTimeout(function() {
                 if (!self.data.isInitialized) self.hookCapture();
@@ -1416,11 +1014,6 @@ var yorenov = {
                             var capture = document.querySelector('.capture');
                             if (capture) {
                                 self.hookCapture();
-                                if (self.data.selectedType && self.data.selectedType !== "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E") {
-                                    setTimeout(function() {
-                                        self.applyStyles(self.data.selectedType);
-                                    }, 100);
-                                }
                             }
                         }
                     });
@@ -1435,11 +1028,6 @@ var yorenov = {
                     var capture = document.querySelector('.capture');
                     if (capture) {
                         self.hookCapture();
-                        if (self.data.selectedType && self.data.selectedType !== "\u041E\u043B\u0434 \u0442\u0430\u0431\u043B\u043E") {
-                            setTimeout(function() {
-                                self.applyStyles(self.data.selectedType);
-                            }, 100);
-                        }
                     }
                 }
             }, 3000);
@@ -1465,10 +1053,6 @@ var yorenov = {
     });
     step(function() {
         yorenov.hud.init();
-    });
-    step(function() {
-        yorenov.yorenovRadar.init();
-        yorenov.yorenovLogo.init();
     });
     step(function() {
         yorenov.captureMod.init();

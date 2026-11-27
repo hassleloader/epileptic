@@ -2117,11 +2117,6 @@ function applyCss() {
     font-style: italic
 }
 
-/* Глобальный белый цвет для всего текста */
-#app {
-    color: #fff !important;
-}
-
 #app .window .modal-container-wrapper {
   background: 0 0;
   background: linear-gradient(212.45deg, #0e1434e6 -24.84%, #7d1b1de6 130.15%);
@@ -2130,16 +2125,20 @@ function applyCss() {
   padding: 2.22vh;
   box-shadow: none;
   transform: scale(.8)
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .window .modal-container {
   border: none;
   padding: 0;
   border-radius: 0
+  font-family: 'GothamPro Medium', sans-serif;
+
 }
 
 #app .window .modal__title {
-  font-family: 'GothamPro', sans-serif;
+  font-family: 'GothamPro Medium', sans-serif;
   font-weight: 600;
   font-size: 2.22vh;
   line-height: 3.33vh;
@@ -2149,7 +2148,8 @@ function applyCss() {
 }
 
 #app .window .window__subtitle {
-  font-family: 'GothamPro', sans-serif;
+  font-family: 'GothamPro Medium', sans-serif;
+  
   margin: 0 2.96vh;
   color: #fff !important
 }
@@ -2170,24 +2170,33 @@ function applyCss() {
   height: 5vh;
   color: #fff !important;
   box-shadow: none
+  font-family: 'GothamPro Medium', sans-serif;
 }
 
 #app .window .window-table__item:hover {
   background: #4c1a2dcc
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .window .window-table__item.selected {
   background: #ffb200 !important;
   color: #351321 !important
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .window .window-table__col {
   justify-content: center;
   padding: 0 .96vh
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .window .window-table__item.selected p {
   color: #351321 !important
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .window .window__buttons {
@@ -2195,15 +2204,21 @@ function applyCss() {
   align-items: center;
   justify-content: center;
   transform: scale(1.2)
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .window .window__buttons .controls-button__container {
   position: relative
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .window .window__buttons .controls-button {
   position: absolute;
   width: 100%
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .login-head-icon,
@@ -2227,7 +2242,7 @@ function applyCss() {
   line-height: 2.31vh;
   font-weight: 500;
   font-size: 1.11vh;
-  font-family: 'GothamPro', sans-serif;
+  font-family: 'GothamPro Medium', sans-serif;
   opacity: .5
 }
 
@@ -2238,6 +2253,8 @@ function applyCss() {
 
 #app .window .window__buttons .controls-button__container_disabled .controls-button__container-text {
   opacity: .25
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .window .input-field {
@@ -2245,6 +2262,8 @@ function applyCss() {
   box-shadow: 1.39vh 1.39vh 1.85vh #0003;
   border-radius: .93vh;
   border: none
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .window .input-field_hoverable:hover {
@@ -2258,16 +2277,19 @@ function applyCss() {
 
 #app .window .input-field input,
 #app .window .input-field__placeholder {
-  font-family: 'GothamPro', sans-serif;
   font-weight: 500;
   color: #fff !important
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .window .input-field_focused .input-field__placeholder,
 #app .window .input-field_focused input,
 #app .window .input-field_hoverable:hover.input-field_focuse .input-field__placeholder,
 #app .window .input-field_hoverable:hover.input-field_focuse input {
-  color: #fff !important
+  color: #fff !important;
+  font-family: 'GothamPro Medium', sans-serif;
+
 }
 
 #app .authorization {
@@ -2316,11 +2338,11 @@ function applyCss() {
 }
 
 #app .login-auth .login-head__subtitle:after {
-  content: "";
+  content: "Ввести";
   width: 9.72vh;
   height: .93vh;
   border-radius: .74vh;
-  background: #fff;
+  background: #505050;
   display: block
 }
 
@@ -2336,7 +2358,8 @@ function applyCss() {
   position: relative;
   font-weight: 400;
   background: #00000054;
-  font-family: 'GothamPro', sans-serif
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .login-auth .authorization-field,
@@ -2491,31 +2514,44 @@ function applyCss() {
   width: 100%;
   margin-bottom: 1.11vh;
   height: auto;
-  font-family: 'GothamPro', sans-serif
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .login-auth .authorization-field:before {
   content: "Введите пароль*"
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .login-code .authorization-field:before {
   content: "Введите значение*"
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .registration-bonuses .authorization-field:before {
   content: "Введите ник пригласившего (или пропустите)*"
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .registration-form>div:first-child .authorization-field:before {
   content: "Введите e-mail*"
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .registration-form>div:nth-child(2) .authorization-field:before {
   content: "Придумайте пароль (мин. 6 символов)*"
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .registration-form>div:nth-child(3) .authorization-field:before {
   content: "Повторите пароль*"
+  font-family: 'GothamPro Medium', sans-serif;
+  
 }
 
 #app .authorization .login {
@@ -2529,6 +2565,7 @@ function applyCss() {
 
 #app .registration__title {
   color: #fff !important
+  font-family: 'GothamPro Medium', sans-serif;
 }
 
 #app .registration__title-icon {

@@ -1,5 +1,5 @@
 (function () {
-    var NOTIFICATIONS_LIST = ["ScriptLoader/v2/by/epilepsia", "Смена формы и цветов минимапы \"/radar\"", "Смена размера логотипа сервера \"/logo\"", "Старая карточка бизнесов, имущества"];
+    var NOTIFICATIONS_LIST = ["Старые диалоговые окна", "Смена формы и цветов минимапы \"/radar\"", "Смена размера логотипа сервера \"/logo\"", "Старая карточка бизнесов, имущества" , "interfaceLoader by trustov"];
     var DURATION_MS = 3500;
     var BASE_BOTTOM_VH = 2.5;
     var STEP_VH = 6.5;
@@ -44,11 +44,11 @@
             'position: fixed !important;',
             'right: 2.5vh !important;',
             'bottom: ' + bottomPos + 'vh !important;',
-            'background: rgba(138, 138, 138, 0.7) !important;',
+            'background: rgba(0, 0, 0, 0.7) !important;',
             'color: #ffffff !important;',
             'padding: 1.2vh 2.8vh !important;',
             'border-radius: 0.3vh !important;',
-            'font-family: "GothamPro Medium", "GothamPro Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;',
+            'font-family: "GothamPro Medium"; ',
             'font-size: 1.6vh !important;',
             'line-height: 1.3 !important;',
             'text-align: center !important;',

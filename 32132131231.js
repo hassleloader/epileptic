@@ -2046,7 +2046,83 @@ var yorenov = {
 function applyCss() {
   const style = document.createElement('style');
   style.textContent = `
-    #app .window .modal-container-wrapper {
+   /* Подключение шрифтов GothamPro */
+@font-face {
+    font-family: 'GothamPro Light';
+    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GothamPro Light Italic';
+    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_lightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'GothamPro Regular';
+    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GothamPro Italic';
+    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'GothamPro Medium';
+    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GothamPro Medium Italic';
+    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_mediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'GothamPro Bold';
+    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GothamPro Bold Italic';
+    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_bolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'GothamPro Black';
+    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GothamPro Black Italic';
+    src: url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_blackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic
+}
+
+/* Глобальный белый цвет для всего текста */
+#app {
+    color: #fff !important;
+}
+
+#app .window .modal-container-wrapper {
   background: 0 0;
   background: linear-gradient(212.45deg, #0e1434e6 -24.84%, #7d1b1de6 130.15%);
   border-radius: 1.85vh;
@@ -2063,18 +2139,19 @@ function applyCss() {
 }
 
 #app .window .modal__title {
-  font-family: var(--font-famaly-all);
+  font-family: 'GothamPro', sans-serif;
   font-weight: 600;
   font-size: 2.22vh;
   line-height: 3.33vh;
   font-style: normal;
-  color: var(--color);
+  color: #fff !important;
   text-transform: none
 }
 
 #app .window .window__subtitle {
-  font-family: var(--font-famaly-all);
-  margin: 0 2.96vh
+  font-family: 'GothamPro', sans-serif;
+  margin: 0 2.96vh;
+  color: #fff !important
 }
 
 #app .window .scrollable-container__container {
@@ -2091,7 +2168,7 @@ function applyCss() {
   border-radius: .46vh;
   margin-top: .93vh;
   height: 5vh;
-  color: var(--color);
+  color: #fff !important;
   box-shadow: none
 }
 
@@ -2144,13 +2221,13 @@ function applyCss() {
 #app .window .window__buttons .controls-button__container-text {
   background: 0 0 !important;
   background: linear-gradient(45deg, #e9651b, #f5be09) !important;
-  color: #fff;
+  color: #fff !important;
   border-radius: .93vh;
   padding: 0 1.2vh;
   line-height: 2.31vh;
   font-weight: 500;
   font-size: 1.11vh;
-  font-family: var(--font-famaly-all);
+  font-family: 'GothamPro', sans-serif;
   opacity: .5
 }
 
@@ -2181,15 +2258,16 @@ function applyCss() {
 
 #app .window .input-field input,
 #app .window .input-field__placeholder {
-  font-family: var(--font-famaly-all);
-  font-weight: 500
+  font-family: 'GothamPro', sans-serif;
+  font-weight: 500;
+  color: #fff !important
 }
 
 #app .window .input-field_focused .input-field__placeholder,
 #app .window .input-field_focused input,
 #app .window .input-field_hoverable:hover.input-field_focuse .input-field__placeholder,
 #app .window .input-field_hoverable:hover.input-field_focuse input {
-  color: #fff
+  color: #fff !important
 }
 
 #app .authorization {
@@ -2230,11 +2308,11 @@ function applyCss() {
   font-size: 5.74vh;
   font-weight: 900;
   line-height: 100%;
-  color: #fff;
+  color: #fff !important;
   position: relative;
   padding-bottom: 4.48vh;
   font-style: normal;
-  font-family: var(--font-famaly-all)
+  font-family: 'GothamPro', sans-serif
 }
 
 #app .login-auth .login-head__subtitle:after {
@@ -2252,13 +2330,13 @@ function applyCss() {
   box-sizing: border-box;
   border: .19vh solid #ffffff91;
   border-radius: .74vh;
-  color: #ffffffd6;
+  color: #fff !important;
   font-size: 1.3vh;
   width: 46.48vh;
   position: relative;
   font-weight: 400;
   background: #00000054;
-  font-family: var(--font-famaly-all)
+  font-family: 'GothamPro', sans-serif
 }
 
 #app .login-auth .authorization-field,
@@ -2281,10 +2359,10 @@ function applyCss() {
 }
 
 #app .authorization-field__input {
-  color: #ffffffd6 !important;
+  color: #fff !important;
   font-size: 1.3vh;
   border: none !important;
-  font-family: var(--font-famaly-all);
+  font-family: 'GothamPro', sans-serif;
   padding-bottom: 0
 }
 
@@ -2313,12 +2391,13 @@ function applyCss() {
   padding: 0 4.63vh;
   height: 6.11vh;
   border-radius: .74vh;
-  font-family: var(--font-famaly-all);
+  font-family: 'GothamPro', sans-serif;
   line-height: 6.11vh;
   font-size: 2.04vh;
   font-weight: 500;
   width: 17vh;
-  text-transform: inherit
+  text-transform: inherit;
+  color: #fff !important
 }
 
 #app .registration-personalization__button {
@@ -2407,11 +2486,12 @@ function applyCss() {
   top: -3vh;
   font-size: 1.67vh;
   line-height: 100%;
-  color: #ffffffb3;
+  color: #fff !important;
   background: 0 0;
   width: 100%;
   margin-bottom: 1.11vh;
-  height: auto
+  height: auto;
+  font-family: 'GothamPro', sans-serif
 }
 
 #app .login-auth .authorization-field:before {
@@ -2448,7 +2528,7 @@ function applyCss() {
 }
 
 #app .registration__title {
-  color: #fff
+  color: #fff !important
 }
 
 #app .registration__title-icon {

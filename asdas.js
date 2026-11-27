@@ -134,7 +134,146 @@ window.yorenovNewHudAssets = window.yorenovNewHudAssets = {
         "timer": "data:image/png;base64,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"
     },
     "speedometer": {},
-    "style": "/* ==== Fonts from original.js ==== */\n@font-face{font-family:'GothamPro Light';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_light.ttf') format('truetype');font-weight:300;font-style:normal}\n@font-face{font-family:'GothamPro Light Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_lightitalic.ttf') format('truetype');font-weight:300;font-style:italic}\n@font-face{font-family:'GothamPro Regular';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro.ttf') format('truetype');font-weight:400;font-style:normal}\n@font-face{font-family:'GothamPro Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_italic.ttf') format('truetype');font-weight:400;font-style:italic}\n@font-face{font-family:'GothamPro Medium';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_medium.ttf') format('truetype');font-weight:500;font-style:normal}\n@font-face{font-family:'GothamPro Medium Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_mediumitalic.ttf') format('truetype');font-weight:500;font-style:italic}\n@font-face{font-family:'GothamPro Bold';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_bold.ttf') format('truetype');font-weight:700;font-style:normal}\n@font-face{font-family:'GothamPro Bold Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_bolditalic.ttf') format('truetype');font-weight:700;font-style:italic}\n@font-face{font-family:'GothamPro Black';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_black.ttf') format('truetype');font-weight:900;font-style:normal}\n@font-face{font-family:'GothamPro Black Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_blackitalic.ttf') format('truetype');font-weight:900;font-style:italic}\n\n/* ==== Hide default HUD (from original.js) ==== */\n#app .hud-radmir-wanted{display:none}\nbody #app .hud-radmir-info{display:none}\n.hud-hassle-map .map-mask{display:none}\n#app .vignette{display:none}\nbody #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{display:none!important}\n#app .hud-radmir-radar__radar-border{display:none}\n#app .hud-radmir-radar__radar-border_new-year{display:none}\n#app .hud-radmir-radar__radar-border_helloween{display:none}\n#app .hud-radmir-radar__radar-bats{display:none}\n\n/* ==== Logo + bonus (original.js values on loader DOM) ==== */\n.OLD-RADMIR-hud-Container .OLD-RADMIR-logo{width:auto!important;height:auto!important;display:flex;align-items:center;transform-origin:top right}\n.OLD-RADMIR-hud-Container .OLD-RADMIR-logo img{width:20.2vh!important;height:5vh!important;max-width:20.2vh!important;max-height:5vh!important;object-fit:contain!important}\n.OLD-RADMIR-hud-Container .OLD-RADMIR-logo__bonus{position:absolute!important;top:auto!important;bottom:-2.4vh!important;right:0.35vh!important;left:auto!important;margin:0!important;width:3vh!important;height:3vh!important;z-index:6!important}\n\n/* ==== Ammo (original: clip 2.27vh / total 1.67vh) ==== */\n.OLD-RADMIR-hud-Container #OLD-RADMIR-ammo__in-clip{font-family:'GothamPro Black Italic';font-weight:900;font-style:italic;font-size:2.27vh!important;text-shadow:0 0 0.46vh #00000080}\n.OLD-RADMIR-hud-Container #OLD-RADMIR-ammo__total{font-family:'GothamPro Light Italic';font-weight:300;font-style:italic;font-size:1.67vh!important;text-shadow:0 0 0.46vh #000000b3}\n\n/* ==== Money ==== */\n.OLD-RADMIR-hud-Container #OLD-RADMIR-cash__value{font-family:'GothamPro Black Italic';font-weight:900;font-style:italic;font-size:2.59vh!important;text-shadow:0 0 0.46vh #00000080}\n.OLD-RADMIR-hud-Container .OLD-RADMIR-cash__icon{width:2.4vh!important;height:2.4vh!important;margin-right:13px;margin-top:1px}\n\n/* ==== Bars and values ==== */\n.OLD-RADMIR-hud-Container .OLD-RADMIR-param__amount{font-family:'GothamPro Light Italic';font-weight:300;font-style:italic;width:3.24vh;font-size:1.67vh!important;text-shadow:0 0 0.46vh #000000b3}\n.OLD-RADMIR-hud-Container .OLD-RADMIR-param__progress,.OLD-RADMIR-hud-Container .OLD-RADMIR-progress__value{width:9.26vh;height:0.46vh;border-radius:0.46vh}\n.OLD-RADMIR-hud-Container .OLD-RADMIR-param__health .OLD-RADMIR-param__icon{width:2vh!important;height:2vh!important}\n.OLD-RADMIR-hud-Container .OLD-RADMIR-param__armour .OLD-RADMIR-param__icon{width:2vh!important;height:2vh!important}\n.OLD-RADMIR-hud-Container .OLD-RADMIR-param__hunger .OLD-RADMIR-param__icon{width:2vh!important;height:2vh!important}\n\n/* ==== Wanted stars ==== */\n.OLD-RADMIR-hud-Container .OLD-RADMIR-wanted__row>img{width:2.3vh!important;height:1.8vh!important;padding:0.19vh 0.28vh!important}\n\n/* ==== Green zone (original: bottom-left) ==== */\n.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__main{left:5.8vw!important;right:auto!important;top:auto!important;bottom:27vh!important}\n.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__image{width:3.6vh!important;height:4.5vh!important;max-width:3.6vh!important;max-height:4.5vh!important}\n.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__text{color:#fff;text-shadow:3px 3px 5px #00000080}\n.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__text div:first-child{font-family:'GothamPro Black','GothamPro Bold',Arial,sans-serif;font-size:13px;font-weight:900;text-transform:uppercase}\n.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__text div:last-child{color:hsl(0deg 0% 100% / 70%);font-size:12px;font-weight:500;margin-top:5px}\n\n/* ==== Freeze bar (original geometry) ==== */\n.OLD-RADMIR-hud-Container .OLD-RADMIR-param__freeze{background:hsl(190deg 63% 66% / 40%)!important;width:26.1111vh!important;height:0.65vh!important;border-radius:1vh!important;outline:hsl(0deg 0% 0% / 20%) 0.2vh solid;outline-offset:0.1vh;border:0!important;overflow:hidden}\n\n/* ==== Authorization and modals (from original.js) ==== */\nbody .authorization{background-color:transparent}\n#app .authorization{background-image:url();background-size:auto 100vh}\n#app .modal-container-wrapper{border:0;background-size:100%;transform:scale(0.84)}\n#app .modal__title{letter-spacing:normal;padding-bottom:1.5vh}\n#app .window-table__item{height:4.3vh;border-radius:0.3vh;box-shadow:none}\n",
+    "style": `
+/* ==== Fonts from original.js ==== */
+@font-face{font-family:'GothamPro Light';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_light.ttf') format('truetype');font-weight:300;font-style:normal}
+@font-face{font-family:'GothamPro Light Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_lightitalic.ttf') format('truetype');font-weight:300;font-style:italic}
+@font-face{font-family:'GothamPro Regular';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro.ttf') format('truetype');font-weight:400;font-style:normal}
+@font-face{font-family:'GothamPro Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_italic.ttf') format('truetype');font-weight:400;font-style:italic}
+@font-face{font-family:'GothamPro Medium';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_medium.ttf') format('truetype');font-weight:500;font-style:normal}
+@font-face{font-family:'GothamPro Medium Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_mediumitalic.ttf') format('truetype');font-weight:500;font-style:italic}
+@font-face{font-family:'GothamPro Bold';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_bold.ttf') format('truetype');font-weight:700;font-style:normal}
+@font-face{font-family:'GothamPro Bold Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_bolditalic.ttf') format('truetype');font-weight:700;font-style:italic}
+@font-face{font-family:'GothamPro Black';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_black.ttf') format('truetype');font-weight:900;font-style:normal}
+@font-face{font-family:'GothamPro Black Italic';src:url('https://raw.githubusercontent.com/Fonts-Limit/Fonts/refs/heads/main/gothampro_blackitalic.ttf') format('truetype');font-weight:900;font-style:italic}
+
+/* ==== Hide default HUD (from original.js) ==== */
+#app .hud-radmir-wanted{display:none}
+body #app .hud-radmir-info{display:none}
+.hud-hassle-map .map-mask{display:none}
+#app .vignette{display:none}
+body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{display:none!important}
+#app .hud-radmir-radar__radar-border{display:none}
+#app .hud-radmir-radar__radar-border_new-year{display:none}
+#app .hud-radmir-radar__radar-border_helloween{display:none}
+#app .hud-radmir-radar__radar-bats{display:none}
+
+/* ==== Logo + bonus (original.js values on loader DOM) ==== */
+.OLD-RADMIR-hud-Container .OLD-RADMIR-logo{width:auto!important;height:auto!important;display:flex;align-items:center;transform-origin:top right}
+.OLD-RADMIR-hud-Container .OLD-RADMIR-logo img{width:20.2vh!important;height:5vh!important;max-width:20.2vh!important;max-height:5vh!important;object-fit:contain!important}
+.OLD-RADMIR-hud-Container .OLD-RADMIR-logo__bonus{position:absolute!important;top:auto!important;bottom:-2.4vh!important;right:0.35vh!important;left:auto!important;margin:0!important;width:3vh!important;height:3vh!important;z-index:6!important}
+
+/* ==== Ammo (original: clip 2.27vh / total 1.67vh) ==== */
+.OLD-RADMIR-hud-Container #OLD-RADMIR-ammo__in-clip{font-family:'GothamPro Black Italic';font-weight:900;font-style:italic;font-size:2.27vh!important;text-shadow:0 0 0.46vh #00000080}
+.OLD-RADMIR-hud-Container #OLD-RADMIR-ammo__total{font-family:'GothamPro Light Italic';font-weight:300;font-style:italic;font-size:1.67vh!important;text-shadow:0 0 0.46vh #000000b3}
+
+/* ==== Money ==== */
+.OLD-RADMIR-hud-Container #OLD-RADMIR-cash__value{font-family:'GothamPro Black Italic';font-weight:900;font-style:italic;font-size:2.59vh!important;text-shadow:0 0 0.46vh #00000080}
+.OLD-RADMIR-hud-Container .OLD-RADMIR-cash__icon{width:2.4vh!important;height:2.4vh!important;margin-right:13px;margin-top:1px}
+
+/* ==== Bars and values ==== */
+.OLD-RADMIR-hud-Container .OLD-RADMIR-param__amount{font-family:'GothamPro Light Italic';font-weight:300;font-style:italic;width:3.24vh;font-size:1.67vh!important;text-shadow:0 0 0.46vh #000000b3}
+.OLD-RADMIR-hud-Container .OLD-RADMIR-param__progress,.OLD-RADMIR-hud-Container .OLD-RADMIR-progress__value{width:9.26vh;height:0.46vh;border-radius:0.46vh}
+.OLD-RADMIR-hud-Container .OLD-RADMIR-param__health .OLD-RADMIR-param__icon{width:2vh!important;height:2vh!important}
+.OLD-RADMIR-hud-Container .OLD-RADMIR-param__armour .OLD-RADMIR-param__icon{width:2vh!important;height:2vh!important}
+.OLD-RADMIR-hud-Container .OLD-RADMIR-param__hunger .OLD-RADMIR-param__icon{width:2vh!important;height:2vh!important}
+
+/* ==== Wanted stars ==== */
+.OLD-RADMIR-hud-Container .OLD-RADMIR-wanted__row>img{width:2.3vh!important;height:1.8vh!important;padding:0.19vh 0.28vh!important}
+
+/* ==== Green zone (original: bottom-left) ==== */
+.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__main{left:5.8vw!important;right:auto!important;top:auto!important;bottom:27vh!important}
+.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__image{width:3.6vh!important;height:4.5vh!important;max-width:3.6vh!important;max-height:4.5vh!important}
+.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__text{color:#fff;text-shadow:3px 3px 5px #00000080}
+.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__text div:first-child{font-family:'GothamPro Black','GothamPro Bold',Arial,sans-serif;font-size:13px;font-weight:900;text-transform:uppercase}
+.OLD-RADMIR-hud-Container .OLD-RADMIR-green-zone__text div:last-child{color:hsl(0deg 0% 100% / 70%);font-size:12px;font-weight:500;margin-top:5px}
+
+/* ==== Freeze bar (original geometry) ==== */
+.OLD-RADMIR-hud-Container .OLD-RADMIR-param__freeze{background:hsl(190deg 63% 66% / 40%)!important;width:26.1111vh!important;height:0.65vh!important;border-radius:1vh!important;outline:hsl(0deg 0% 0% / 20%) 0.2vh solid;outline-offset:0.1vh;border:0!important;overflow:hidden}
+
+/* ==== NEW STYLES (from user) ==== */
+#app .window .window__buttons .controls-button__container_disabled{pointer-events:none}
+#app .jsl-select{width:36.48vh}
+#app .jsl-select__value{overflow:visible}
+#app .vignette,#app .window .modal__pattern-wrapper{display:none}
+:root{--bg:#000;--bg-20:#00000033;--bg-40:#00000066;--bg-50:#00000080;--bg-60:#00000099;--bg-80:#000000cc;--color:#fff;--color-10:#ffffff1a;--color-30:#ffffff4d;--font-famaly-all:GothamPro,"Open Sans"}
+#app .radmir-chat-input__input input{color:#fff!important}
+#app .radmir-chat-input__input-lang{padding:0 .463vh .3704vh;color:#fff!important;border-left:.18vh solid #cdcdcd}
+#app .radmir-chat:before{width:70vw!important;background:linear-gradient(148deg,#141414d1 10%,#14141400 50%)!important}
+#app .radmir-chat-input__input{border-radius:.8333vh;background-color:#000;border:.18vh solid #cdcdcd;padding:0 .93vh!important}
+#app .radmir-chat_inactive{opacity:1!important}
+#app .window .modal-container-wrapper{background:0 0;background:linear-gradient(212.45deg,#0e1434e6 -24.84%,#7d1b1de6 130.15%);border-radius:1.85vh;border:none;padding:2.22vh;box-shadow:none;transform:scale(.8)}
+#app .window .modal-container{border:none;padding:0;border-radius:0}
+#app .window .modal__title{font-weight:600;font-size:2.22vh;line-height:3.33vh;font-style:normal;color:var(--color);text-transform:none;font-family:'GothamPro Medium',sans-serif}
+#app .window .window__subtitle{margin:0 2.96vh}
+#app .window .scrollable-container__container{mask-image:none!important}
+#app .window .window__content-container{min-width:45vh}
+#app .window .window-table__item{background:#35121fcc;border:0!important;border-radius:.46vh;margin-top:.93vh;height:5vh;color:var(--color);box-shadow:none}
+#app .window .window-table__item:hover{background:#4c1a2dcc}
+#app .window .window-table__item.selected{background:#ffb200!important;color:#351321!important}
+#app .window .window-table__col{justify-content:center;padding:0 .96vh}
+#app .window .window-table__item.selected p{color:#351321!important}
+#app .window .window__buttons{display:flex;align-items:center;justify-content:center;transform:scale(1.2)}
+#app .window .window__buttons .controls-button__container{position:relative}
+#app .window .window__buttons .controls-button{position:absolute;width:100%}
+#app .login-head-icon,#app .registration-personalization-switcher__text,#app .window .window__buttons .controls-button-shadow{display:none}
+#app .window .window__buttons .controls-button--text,#app .window .window__buttons .controls-button-background,#app .window .window__buttons .controls-button-icon{opacity:0!important}
+#app .window .window__buttons .controls-button__container:hover .controls-button__container-text{opacity:1;box-shadow:none}
+#app .window .window__buttons .controls-button__container_disabled .controls-button__container-text{opacity:.25}
+#app .window .input-field{background:#471a2bcc;box-shadow:1.39vh 1.39vh 1.85vh #0003;border-radius:.93vh;border:none}
+#app .window .input-field_hoverable:hover{background-color:#471a2b93}
+#app .window .input-field_focused,#app .window .input-field_hoverable:hover.input-field_focused{background:#61233b}
+#app .window .input-field input,#app .window .input-field__placeholder{font-weight:500;font-family:'GothamPro Medium',sans-serif}
+#app .window .input-field_focused .input-field__placeholder,#app .window .input-field_focused input,#app .window .input-field_hoverable:hover.input-field_focuse .input-field__placeholder,#app .window .input-field_hoverable:hover.input-field_focuse input{color:#fff}
+#app .authorization{background:0 0}
+#app .authorization__gradient{background:linear-gradient(69.28deg,#1414148f 26.1%,#14141400 94.95%)}
+#app .login-auth:before,#app .login-code:before,#app .registration:before{content:"";background-image:url();background-size:cover;width:100vw;height:100vh;position:absolute;top:0;left:0;z-index:-1}
+#app .registration:before{background-image:url()}
+#app .login-head__subtitle{color:transparent;opacity:1}
+#app .login-auth .login-head__subtitle:before{content:"С ВОЗВРАЩЕНИЕМ НА HASSLE";display:block;width:60vh;font-size:5.74vh;font-weight:900;line-height:100%;color:#fff;position:relative;padding-bottom:4.48vh;font-style:normal;font-family:'GothamPro Black',sans-serif}
+#app .login-auth .login-head__subtitle:after{content:"";width:9.72vh;height:.93vh;border-radius:.74vh;background:#fff;display:block}
+#app .authorization-field,#app .login-head__username{height:4.63vh;box-sizing:border-box;border:.19vh solid #ffffff91;border-radius:.74vh;color:#ffffffd6;font-size:1.3vh;width:46.48vh;position:relative;font-weight:400;background:#00000054;font-family:'GothamPro Regular',sans-serif}
+#app .login-auth .authorization-field,#app .login-auth .login-head__username{margin-top:7.89vh}
+#app .authorization-field__box,#app .login-head__username{padding:.5vh 1.67vh .4vh}
+#app .authorization-field__box{border:none}
+#app .authorization-field__icon,#app .authorization-field__lang{right:1.5vh}
+#app .authorization-field__input{color:#ffffffd6!important;font-size:1.3vh;border:none!important;padding-bottom:0;font-family:'GothamPro Regular',sans-serif}
+#app .authorization-field__input-placeholder{opacity:0}
+.login-form__suggestion-wrapper .login-form-push{background-color:var(--bg-60);border-radius:1vh}
+.login-form__suggestion-wrapper .login-form-push:before{border-right-width:1.11vh;border-right-style:solid;border-right-color:var(--bg-60);left:.05vh;top:0;opacity:1}
+#app .login-form__button,#app .registration-bonuses__button,#app .registration-form__button,#app .registration-personalization__button{padding:0 4.63vh;height:6.11vh;border-radius:.74vh;line-height:6.11vh;font-size:2.04vh;font-weight:500;width:17vh;text-transform:inherit;font-family:'GothamPro Medium',sans-serif}
+#app .registration-personalization__button{width:24vh}
+#app .registration-bonuses__button{width:36vh}
+#app .registration-bonuses__button-background,#app .registration-form__button-background{border-radius:.74vh}
+#app .login-form,#app .registration-bonuses,#app .registration-form,#app .registration-personalization{width:46.48vh}
+#app .registration-personalization-switcher__button{width:6.11vh;height:6.11vh;box-sizing:border-box;display:flex;justify-content:center;align-items:center;border-radius:.74vh;cursor:pointer;margin-left:1.11vh;transition-duration:.25s;padding:0}
+#app .registration-personalization-switcher__icon{width:2vh;height:2vh;margin:0;fill:white}
+#app .registration-personalization-switcher>div.registration-personalization-switcher__button:first-child{border:.19vh solid #527ff1;background:0 0;margin:0}
+#app .registration-personalization-switcher>div.registration-personalization-switcher__button_active:first-child{background:#527ff1!important}
+#app .registration-personalization-switcher>div.registration-personalization-switcher__button:last-child{border:.19vh solid #d152f1;background:0 0}
+#app .registration-personalization-switcher>div.registration-personalization-switcher__button_active:last-child{background:#d152f1!important}
+#app .registration-personalization-item{width:13.33vh;height:16.85vh;border-radius:.74vh;border:.19vh solid #ffffff69;background:0 0}
+#app .registration-personalization-item:hover{border:.19vh solid #fff;background:0 0!important}
+#app .registration-personalization-item_active{border:.19vh solid #ffb200!important;background:0 0!important}
+#app .authorization-field:before,#app .login-head__username:before{content:"Введите логин*";position:absolute;left:0;top:-3vh;font-size:1.67vh;line-height:100%;color:#ffffffb3;background:0 0;width:100%;margin-bottom:1.11vh;height:auto;font-family:'GothamPro Medium',sans-serif}
+#app .login-auth .authorization-field:before{content:"Введите пароль*"}
+#app .login-code .authorization-field:before{content:"Введите значение*"}
+#app .registration-bonuses .authorization-field:before{content:"Введите ник пригласившего (или пропустите)*"}
+#app .registration-form>div:first-child .authorization-field:before{content:"Введите e-mail*"}
+#app .registration-form>div:nth-child(2) .authorization-field:before{content:"Придумайте пароль (мин. 6 символов)*"}
+#app .registration-form>div:nth-child(3) .authorization-field:before{content:"Повторите пароль*"}
+#app .authorization .login{margin-top:-10vh;margin-left:10vh}
+#app .registration{margin-left:10vh}
+#app .registration__title{color:#fff}
+#app .registration__title-icon{display:none}
+#app .registration .authorization-field{margin-top:6vh}
+#app .registration-personalization-container{width:100%;margin-top:2vh}
+#app .registration-personalization-switcher{margin-top:2vh}
+#app .registration-form__confirm{align-items:flex-start;flex-direction:column}
+#app .login-auth .login-head{margin:0}
+#app .scrollable-container-thumb_type_2.scrollable-container-thumb_horizontal,#app .scrollable-container-thumb_type_2.scrollable-container-thumb_vertical,#app .scrollable-container-thumb_type_3.scrollable-container-thumb_horizontal,#app .scrollable-container-thumb_type_3.scrollable-container-thumb_vertical,#app .scrollable-container-thumb_type_4.scrollable-container-thumb_horizontal,#app .scrollable-container-thumb_type_4.scrollable-container-thumb_vertical,#app .scrollable-container-thumb_type_5.scrollable-container-thumb_horizontal,#app .scrollable-container-thumb_type_5.scrollable-container-thumb_vertical,#app .scrollable-container-thumb_type_6.scrollable-container-thumb_horizontal,#app .scrollable-container-thumb_type_6.scrollable-container-thumb_vertical,#app .scrollable-container-thumb_type_7.scrollable-container-thumb_horizontal,#app .scrollable-container-thumb_type_7.scrollable-container-thumb_vertical,#app .scrollable-container-thumb_type_8.scrollable-container-thumb_horizontal,#app .scrollable-container-thumb_type_8.scrollable-container-thumb_vertical{background-color:#feb900}
+#app .scrollable-container_type_3 .scrollable-container__rail .scrollable-container__rail-rail-background{background-color:#260d16}
+`,
     "hwid": "",
     "scripts": ["capture", "oldcard"]
 };;
@@ -2266,506 +2405,3 @@ var yorenov = {
 
   W.SampCrosshair = api;
 })();
-function applyCss() {
-  const style = document.createElement('style');
-  style.textContent = `
-  #app .window .window__buttons .controls-button__container_disabled {
-    pointer-events: none
-}
-
-#app .jsl-select {
-    width: 36.48vh
-}
-
-#app .jsl-select__value {
-    overflow: visible
-}
-
-#app .vignette,
-#app .window .modal__pattern-wrapper {
-    display: none
-}
-
-:root {
-    --bg: #000;
-    --bg-20: #00000033;
-    --bg-40: #00000066;
-    --bg-50: #00000080;
-    --bg-60: #00000099;
-    --bg-80: #000000cc;
-    --color: #fff;
-    --color-10: #ffffff1a;
-    --color-30: #ffffff4d;
-    --font-famaly-all: GothamPro, "Open Sans"
-}
-
-#app .radmir-chat-input__input input {
-    color: #fff !important
-}
-
-#app .radmir-chat-input__input-lang {
-    padding: 0 .463vh .3704vh;
-    color: #fff !important;
-    border-left: .18vh solid #cdcdcd
-}
-
-#app .radmir-chat:before {
-    width: 70vw !important;
-    background: linear-gradient(148deg, #141414d1 10%, #14141400 50%) !important
-}
-
-#app .radmir-chat-input__input {
-    border-radius: .8333vh;
-    background-color: #000;
-    border: .18vh solid #cdcdcd;
-    padding: 0 .93vh !important
-}
-
-#app .radmir-chat_inactive {
-    opacity: 1 !important
-}
-#app .window .modal-container-wrapper {
-    background: 0 0;
-    background: linear-gradient(212.45deg, #0e1434e6 -24.84%, #7d1b1de6 130.15%);
-    border-radius: 1.85vh;
-    border: none;
-    padding: 2.22vh;
-    box-shadow: none;
-    transform: scale(.8)
-}
-
-#app .window .modal-container {
-    border: none;
-    padding: 0;
-    border-radius: 0
-}
-
-#app .window .modal__title {
-    font-weight: 600;
-    font-size: 2.22vh;
-    line-height: 3.33vh;
-    font-style: normal;
-    color: var(--color);
-    text-transform: none;
-    font-family: 'GothamPro Medium', sans-serif
-}
-
-#app .window .window__subtitle {
-    margin: 0 2.96vh
-}
-
-#app .window .scrollable-container__container {
-    mask-image: none !important
-}
-
-#app .window .window__content-container {
-    min-width: 45vh
-}
-
-#app .window .window-table__item {
-    background: #35121fcc;
-    border: 0 !important;
-    border-radius: .46vh;
-    margin-top: .93vh;
-    height: 5vh;
-    color: var(--color);
-    box-shadow: none
-}
-
-#app .window .window-table__item:hover {
-    background: #4c1a2dcc
-}
-
-#app .window .window-table__item.selected {
-    background: #ffb200 !important;
-    color: #351321 !important
-}
-
-#app .window .window-table__col {
-    justify-content: center;
-    padding: 0 .96vh
-}
-
-#app .window .window-table__item.selected p {
-    color: #351321 !important
-}
-
-#app .window .window__buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scale(1.2)
-}
-
-#app .window .window__buttons .controls-button__container {
-    position: relative
-}
-
-#app .window .window__buttons .controls-button {
-    position: absolute;
-    width: 100%
-}
-
-#app .login-head-icon,
-#app .registration-personalization-switcher__text,
-#app .window .window__buttons .controls-button-shadow {
-    display: none
-}
-
-#app .window .window__buttons .controls-button--text,
-#app .window .window__buttons .controls-button-background,
-#app .window .window__buttons .controls-button-icon {
-    opacity: 0 !important
-}
-
-
-#app .window .window__buttons .controls-button__container:hover .controls-button__container-text {
-    opacity: 1;
-    box-shadow: none
-}
-
-#app .window .window__buttons .controls-button__container_disabled .controls-button__container-text {
-    opacity: .25
-}
-
-#app .window .input-field {
-    background: #471a2bcc;
-    box-shadow: 1.39vh 1.39vh 1.85vh #0003;
-    border-radius: .93vh;
-    border: none
-}
-
-#app .window .input-field_hoverable:hover {
-    background-color: #471a2b93
-}
-
-#app .window .input-field_focused,
-#app .window .input-field_hoverable:hover.input-field_focused {
-    background: #61233b
-}
-
-#app .window .input-field input,
-#app .window .input-field__placeholder {
-    font-weight: 500;
-    font-family: 'GothamPro Medium', sans-serif
-}
-
-#app .window .input-field_focused .input-field__placeholder,
-#app .window .input-field_focused input,
-#app .window .input-field_hoverable:hover.input-field_focuse .input-field__placeholder,
-#app .window .input-field_hoverable:hover.input-field_focuse input {
-    color: #fff
-}
-
-#app .authorization {
-    background: 0 0
-}
-
-#app .authorization__gradient {
-    background: linear-gradient(69.28deg, #1414148f 26.1%, #14141400 94.95%)
-}
-
-#app .login-auth:before,
-#app .login-code:before,
-#app .registration:before {
-    content: "";
-    background-image:url(${assets.other.bgState1});
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1
-}
-
-#app .registration:before {
-    background-image:url(${assets.other.bgState2})
-}
-
-#app .login-head__subtitle {
-    color: transparent;
-    opacity: 1
-}
-
-#app .login-auth .login-head__subtitle:before {
-    content: "С ВОЗВРАЩЕНИЕМ НА HASSLE";
-    display: block;
-    width: 60vh;
-    font-size: 5.74vh;
-    font-weight: 900;
-    line-height: 100%;
-    color: #fff;
-    position: relative;
-    padding-bottom: 4.48vh;
-    font-style: normal;
-    font-family: 'GothamPro Black', sans-serif
-}
-
-#app .login-auth .login-head__subtitle:after {
-    content: "";
-    width: 9.72vh;
-    height: .93vh;
-    border-radius: .74vh;
-    background: #fff;
-    display: block
-}
-
-#app .authorization-field,
-#app .login-head__username {
-    height: 4.63vh;
-    box-sizing: border-box;
-    border: .19vh solid #ffffff91;
-    border-radius: .74vh;
-    color: #ffffffd6;
-    font-size: 1.3vh;
-    width: 46.48vh;
-    position: relative;
-    font-weight: 400;
-    background: #00000054;
-    font-family: 'GothamPro Regular', sans-serif
-}
-
-#app .login-auth .authorization-field,
-#app .login-auth .login-head__username {
-    margin-top: 7.89vh
-}
-
-#app .authorization-field__box,
-#app .login-head__username {
-    padding: .5vh 1.67vh .4vh
-}
-
-#app .authorization-field__box {
-    border: none
-}
-
-#app .authorization-field__icon,
-#app .authorization-field__lang {
-    right: 1.5vh
-}
-
-#app .authorization-field__input {
-    color: #ffffffd6 !important;
-    font-size: 1.3vh;
-    border: none !important;
-    padding-bottom: 0;
-    font-family: 'GothamPro Regular', sans-serif
-}
-
-#app .authorization-field__input-placeholder {
-    opacity: 0
-}
-
-.login-form__suggestion-wrapper .login-form-push {
-    background-color: var(--bg-60);
-    border-radius: 1vh
-}
-
-.login-form__suggestion-wrapper .login-form-push:before {
-    border-right-width: 1.11vh;
-    border-right-style: solid;
-    border-right-color: var(--bg-60);
-    left: .05vh;
-    top: 0;
-    opacity: 1
-}
-
-#app .login-form__button,
-#app .registration-bonuses__button,
-#app .registration-form__button,
-#app .registration-personalization__button {
-    padding: 0 4.63vh;
-    height: 6.11vh;
-    border-radius: .74vh;
-    line-height: 6.11vh;
-    font-size: 2.04vh;
-    font-weight: 500;
-    width: 17vh;
-    text-transform: inherit;
-    font-family: 'GothamPro Medium', sans-serif
-}
-
-#app .registration-personalization__button {
-    width: 24vh
-}
-
-#app .registration-bonuses__button {
-    width: 36vh
-}
-
-#app .registration-bonuses__button-background,
-#app .registration-form__button-background {
-    border-radius: .74vh
-}
-
-#app .login-form,
-#app .registration-bonuses,
-#app .registration-form,
-#app .registration-personalization {
-    width: 46.48vh
-}
-
-#app .registration-personalization-switcher__button {
-    width: 6.11vh;
-    height: 6.11vh;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: .74vh;
-    cursor: pointer;
-    margin-left: 1.11vh;
-    transition-duration: .25s;
-    padding: 0
-}
-
-#app .registration-personalization-switcher__icon {
-    width: 2vh;
-    height: 2vh;
-    margin: 0;
-    fill: white
-}
-
-#app .registration-personalization-switcher>div.registration-personalization-switcher__button:first-child {
-    border: .19vh solid #527ff1;
-    background: 0 0;
-    margin: 0
-}
-
-#app .registration-personalization-switcher>div.registration-personalization-switcher__button_active:first-child {
-    background: #527ff1 !important
-}
-
-#app .registration-personalization-switcher>div.registration-personalization-switcher__button:last-child {
-    border: .19vh solid #d152f1;
-    background: 0 0
-}
-
-#app .registration-personalization-switcher>div.registration-personalization-switcher__button_active:last-child {
-    background: #d152f1 !important
-}
-
-#app .registration-personalization-item {
-    width: 13.33vh;
-    height: 16.85vh;
-    border-radius: .74vh;
-    border: .19vh solid #ffffff69;
-    background: 0 0
-}
-
-#app .registration-personalization-item:hover {
-    border: .19vh solid #fff;
-    background: 0 0 !important
-}
-
-#app .registration-personalization-item_active {
-    border: .19vh solid #ffb200 !important;
-    background: 0 0 !important
-}
-
-#app .authorization-field:before,
-#app .login-head__username:before {
-    content: "Введите логин*";
-    position: absolute;
-    left: 0;
-    top: -3vh;
-    font-size: 1.67vh;
-    line-height: 100%;
-    color: #ffffffb3;
-    background: 0 0;
-    width: 100%;
-    margin-bottom: 1.11vh;
-    height: auto;
-    font-family: 'GothamPro Medium', sans-serif
-}
-
-#app .login-auth .authorization-field:before {
-    content: "Введите пароль*"
-}
-
-#app .login-code .authorization-field:before {
-    content: "Введите значение*"
-}
-
-#app .registration-bonuses .authorization-field:before {
-    content: "Введите ник пригласившего (или пропустите)*"
-}
-
-#app .registration-form>div:first-child .authorization-field:before {
-    content: "Введите e-mail*"
-}
-
-#app .registration-form>div:nth-child(2) .authorization-field:before {
-    content: "Придумайте пароль (мин. 6 символов)*"
-}
-
-#app .registration-form>div:nth-child(3) .authorization-field:before {
-    content: "Повторите пароль*"
-}
-
-#app .authorization .login {
-    margin-top: -10vh;
-    margin-left: 10vh
-}
-
-#app .registration {
-    margin-left: 10vh
-}
-
-#app .registration__title {
-    color: #fff
-}
-
-#app .registration__title-icon {
-    display: none
-}
-
-#app .registration .authorization-field {
-    margin-top: 6vh
-}
-
-#app .registration-personalization-container {
-    width: 100%;
-    margin-top: 2vh
-}
-
-#app .registration-personalization-switcher {
-    margin-top: 2vh
-}
-
-#app .registration-form__confirm {
-    align-items: flex-start;
-    flex-direction: column
-}
-
-#app .login-auth .login-head {
-    margin: 0
-}
-
-#app .scrollable-container-thumb_type_2.scrollable-container-thumb_horizontal,
-#app .scrollable-container-thumb_type_2.scrollable-container-thumb_vertical,
-#app .scrollable-container-thumb_type_3.scrollable-container-thumb_horizontal,
-#app .scrollable-container-thumb_type_3.scrollable-container-thumb_vertical,
-#app .scrollable-container-thumb_type_4.scrollable-container-thumb_horizontal,
-#app .scrollable-container-thumb_type_4.scrollable-container-thumb_vertical,
-#app .scrollable-container-thumb_type_5.scrollable-container-thumb_horizontal,
-#app .scrollable-container-thumb_type_5.scrollable-container-thumb_vertical,
-#app .scrollable-container-thumb_type_6.scrollable-container-thumb_horizontal,
-#app .scrollable-container-thumb_type_6.scrollable-container-thumb_vertical,
-#app .scrollable-container-thumb_type_7.scrollable-container-thumb_horizontal,
-#app .scrollable-container-thumb_type_7.scrollable-container-thumb_vertical,
-#app .scrollable-container-thumb_type_8.scrollable-container-thumb_horizontal,
-#app .scrollable-container-thumb_type_8.scrollable-container-thumb_vertical {
-    background-color: #feb900
-}
-
-#app .scrollable-container_type_3 .scrollable-container__rail .scrollable-container__rail-rail-background {
-    background-color: #260d16
-}
-
-  `;
-  document.head.appendChild(style);
-}
-
-applyCss();

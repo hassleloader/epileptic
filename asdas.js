@@ -217,7 +217,6 @@ body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{dis
 #app .window .window__buttons .controls-button__container{position:relative}
 #app .window .window__buttons .controls-button{position:absolute;width:100%}
 #app .login-head-icon,#app .registration-personalization-switcher__text,#app .window .window__buttons .controls-button-shadow{display:none}
-#app .window .window__buttons .controls-button--text,#app .window .window__buttons .controls-button-background,#app .window .window__buttons .controls-button-icon{opacity:0!important}
 #app .window .window__buttons .controls-button__container:hover .controls-button__container-text{opacity:1;box-shadow:none}
 #app .window .window__buttons .controls-button__container_disabled .controls-button__container-text{opacity:.25}
 #app .window .input-field{background:#471a2bcc;box-shadow:1.39vh 1.39vh 1.85vh #0003;border-radius:.93vh;border:none}
@@ -236,6 +235,18 @@ body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{dis
 #app .login-auth .authorization-field,#app .login-auth .login-head__username{margin-top:7.89vh}
 #app .authorization-field__box,#app .login-head__username{padding:.5vh 1.67vh .4vh}
 #app .authorization-field__box{border:none}
+#app .window .window__buttons .controls-button__container-text {
+    background: 0 0 !important;
+    background: linear-gradient(45deg, #e9651b, #f5be09) !important;
+    color: #fff;
+    border-radius: .93vh;
+    padding: 0 1.2vh;
+    line-height: 2.31vh;
+    font-weight: 500;
+    font-size: 1.11vh;
+    opacity: .5;
+    font-family: 'GothamPro Medium', sans-serif
+}
 #app .authorization-field__icon,#app .authorization-field__lang{right:1.5vh}
 #app .authorization-field__input{color:#ffffffd6!important;font-size:1.3vh;border:none!important;padding-bottom:0;font-family:'GothamPro Regular',sans-serif}
 #app .authorization-field__input-placeholder{opacity:0}

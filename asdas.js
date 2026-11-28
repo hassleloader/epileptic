@@ -281,7 +281,7 @@ body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{dis
 
 #app .window .modal-container-wrapper {
     background: 0 0;
-    background: linear-gradient(212.45deg, #041964a3 -24.84%, #317aba 130.15%);
+    background: linear-gradient(212.45deg, #000000a3 -24.84%, #1a1a1a 130.15%);
     border-radius: 1.2vh;
     border: none;
     box-shadow: none;
@@ -343,7 +343,7 @@ body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{dis
 }
 
 #app .window .window-table__item.selected {
-    background: rgba(173, 191, 7, .75) !important;
+    background: rgba(255, 255, 255, 0.75) !important;
     color: #000 !important
 }
 
@@ -390,7 +390,7 @@ body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{dis
     line-height: 2.31vh;
     font-weight: 500;
     font-size: 1.11vh;
-    font-family: var(--font-famaly-all);
+    font-family: "GothamPro Bold";
     border: .1852vh solid #fff;
     font-style: normal;
     text-shadow: none
@@ -401,7 +401,7 @@ body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{dis
 }
 
 #app .window .window__buttons .controls-button__container:hover .controls-button__container-text {
-    background: #006fff;
+    background: #000000;
     box-shadow: none
 }
 
@@ -423,7 +423,7 @@ body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{dis
 }
 
 #app .window .input-field {
-    background: rgba(5, 29, 54, .6);
+    background: rgba(70, 70, 70, 0.6);
     box-shadow: 1.3889vh 1.3889vh 1.8519vh #0003;
     border-radius: .4vh;
     border: .2vh solid #fff;
@@ -431,17 +431,17 @@ body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{dis
 }
 
 #app .window .input-field_hoverable:hover {
-    background: rgba(13, 56, 102, .6)
+    background: rgba(99, 99, 99, 0.6)
 }
 
 #app .window .input-field_focused,
 #app .window .input-field_hoverable:hover.input-field_focused {
-    background: rgba(7, 38, 71, .8)
+    background: rgba(56, 56, 56, 0.8)
 }
 
 #app .window .input-field input,
 #app .window .input-field__placeholder {
-    font-family: var(--font-famaly-all);
+    font-family: "GothamPro Bold";
     font-weight: 500
 }
 
@@ -464,7 +464,7 @@ body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{dis
 #app .inventory-action__modal,
 #app .inventory-extra__container,
 #app .inventory-main {
-    background: linear-gradient(212.45deg, #041964a3 -24.84%, #317aba 130.15%);
+    background: linear-gradient(212.45deg, #000000a3 -24.84%, #2e2e2e 130.15%);
     padding: 2vh;
     border-radius: 1.2vh;
     border: none
@@ -485,7 +485,7 @@ body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{dis
 }
 
 #app .inventory-container__box {
-    background-color: #041964a3;
+    background-color: #000000a3;
     border-radius: 1vh
 }
 
@@ -525,7 +525,7 @@ body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{dis
 }
 
 .inventory-container__info__container-wrapper>div {
-    background-color: #041964a3;
+    background-color: #000000a3;
     border-radius: 1vh;
     padding-top: .8vh;
     border: none
@@ -550,7 +550,7 @@ body #app .hud-radmir-greenzone,#app .hud-circle-green,#app .hud-round-green{dis
 }
 
 #app .trade-items-main__content {
-    background-color: #041964a3;
+    background-color: #000000a3;
     padding: 2vh;
     border-radius: 1vh
 }
